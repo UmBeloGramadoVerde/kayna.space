@@ -1,0 +1,24 @@
+figure {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+figure > img {
+  width: 100%;
+  border-radius: 5%;
+}
+img ~ figcaption {
+  font-size: 2rem;
+  color: pink;
+  font-weight: 500;
+}
+
+.image-gallery {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3vw;
+  width: 100%;
+  margin-bottom: 10vh;
+}

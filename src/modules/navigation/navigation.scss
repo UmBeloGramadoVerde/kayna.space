@@ -1,0 +1,27 @@
+.RouterOutlet {
+    .menu-container{
+        .menu{
+            @at-root .RouterOutlet .menu-container{
+                z-index: 3;
+            }
+        }
+    }
+    .menu-personal-container{
+        .menu-personal{
+            @at-root .RouterOutlet .menu-personal-container{
+                z-index: 2;
+            }
+        }
+    }
+    .menu-professional-container{
+        .menu-professional{
+            @at-root .RouterOutlet .menu-professional-container{
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.active-menu {
+    z-index: 99 !important;
+}

@@ -1,0 +1,14 @@
+.Footer {
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  clear: both !important;
+}
+
+.footer-icon {
+  width: 3vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1vh;
+  fill: pink;
+}

@@ -1,0 +1,421 @@
+:root {
+  --disc-number: 8;
+  --size: 100px;
+}
+.menu-professional-container {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  right: 2px;
+  transition: top 0.7s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+nav.menu-professional {
+  display: block;
+  width: calc(var(--disc-number) * var(--size));
+  height: calc(var(--disc-number) * var(--size));
+  -webkit-transform: translate3d(
+    calc(var(--size) / (var(--disc-number))),
+    calc(-1 * var(--size) / (var(--disc-number))),
+    0
+  );
+  transform: translate3d(
+    calc(var(--size) / (var(--disc-number))),
+    calc(-1 * var(--size) / (var(--disc-number))),
+    0
+  );
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9),
+    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+
+nav.open-professional {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+nav.menu-professional {
+  position: relative;
+  bottom: calc(calc(var(--size) * (var(--disc-number) / 2)) + -62px);
+  right: calc(calc(var(--size) * (var(--disc-number) / 2)) + -38px);
+  visibility: hidden;
+  transition: visibility 0s step-end 0.7s;
+}
+
+.open-professional.menu-professional {
+  visibility: visible;
+  transition: visibility 0s step-start 0s;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.disc-professional {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font: 25px Alegreya Sans, sans-serif;
+  line-height: 40px;
+  padding-top: 10px;
+  border-radius: calc(var(--disc-number) / 2 * var(--size));
+  -webkit-transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 200deg);
+  pointer-events: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s,
+    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s,
+    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+
+.disc-professional div {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.open-professional .disc-professional {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.disc-professional:hover a {
+  color: inherit;
+}
+
+/* ************************** */
+
+/* Level 1 */
+
+.l1-professional {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #282960;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l1-professional {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .l1-professional:hover {
+  background: #1a0a07;
+  color: tomato;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l1-professional:active {
+  background: #803224;
+  color: tomato;
+}
+
+.open-professional .l1-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* Level 2 */
+
+.l2-professional {
+  top: calc(1 * var(--size) / (var(--disc-number) / 4));
+  left: calc(1 * var(--size) / (var(--disc-number) / 4));
+  right: calc(1 * var(--size) / (var(--disc-number) / 4));
+  bottom: calc(1 * var(--size) / (var(--disc-number) / 4));
+  background: #372767;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.open-professional .l2-professional {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .l2-professional:hover {
+  background: #1a0c06;
+  color: #ff7a39;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l2-professional:active {
+  background: #803d1d;
+  color: #ff7a39;
+}
+
+.open-professional .l2-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* Level 3 */
+
+.l3-professional {
+  top: calc(2 * var(--size) / (var(--disc-number) / 4));
+  left: calc(2 * var(--size) / (var(--disc-number) / 4));
+  right: calc(2 * var(--size) / (var(--disc-number) / 4));
+  bottom: calc(2 * var(--size) / (var(--disc-number) / 4));
+  background: #4c256f;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.open-professional .l3-professional {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .l3-professional:hover {
+  background: #1a0f04;
+  color: #ff912b;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l3-professional:active {
+  background: #804916;
+  color: #ff912b;
+}
+
+.open-professional .l3-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* Level 4 */
+
+.l4-professional {
+  top: calc(3 * var(--size) / (var(--disc-number) / 4));
+  left: calc(3 * var(--size) / (var(--disc-number) / 4));
+  right: calc(3 * var(--size) / (var(--disc-number) / 4));
+  bottom: calc(3 * var(--size) / (var(--disc-number) / 4));
+  background: #662376;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.open-professional .l4-professional {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .l4-professional:hover {
+  background: #1a1103;
+  color: #ffa91c;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l4-professional:active {
+  background: #80550e;
+  color: #ffa91c;
+}
+
+.open-professional .l4-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* Level 5 */
+
+.l5-professional {
+  top: calc(4 * var(--size) / (var(--disc-number) / 4));
+  left: calc(4 * var(--size) / (var(--disc-number) / 4));
+  right: calc(4 * var(--size) / (var(--disc-number) / 4));
+  bottom: calc(4 * var(--size) / (var(--disc-number) / 4));
+  background: #7d2175;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.open-professional .l5-professional {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .l5-professional:hover {
+  background: #1a1103;
+  color: #ffa91c;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l5-professional:active {
+  background: #80550e;
+  color: #ffa91c;
+}
+
+.open-professional .l5-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* Level 6 */
+
+.l6-professional {
+  top: calc(5 * var(--size) / (var(--disc-number) / 4));
+  left: calc(5 * var(--size) / (var(--disc-number) / 4));
+  right: calc(5 * var(--size) / (var(--disc-number) / 4));
+  bottom: calc(5 * var(--size) / (var(--disc-number) / 4));
+  background: #8b1a43;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.open-professional .l6-professional {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .l6-professional:hover {
+  background: #1a1103;
+  color: #ffa91c;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l6-professional:active {
+  background: #80550e;
+  color: #ffa91c;
+}
+
+.open-professional .l6-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* Level 7 */
+
+.l7-professional {
+  top: calc(6 * var(--size) / (var(--disc-number) / 4));
+  left: calc(6 * var(--size) / (var(--disc-number) / 4));
+  right: calc(6 * var(--size) / (var(--disc-number) / 4));
+  bottom: calc(6 * var(--size) / (var(--disc-number) / 4));
+  background: #921620;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.open-professional .l7-professional {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .l7-professional:hover {
+  background: #1a1103;
+  color: #ffa91c;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .l7-professional:active {
+  background: #80550e;
+  color: #ffa91c;
+}
+
+.open-professional .l7-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* Last Level */
+
+.last-professional {
+  top: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
+  left: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
+  right: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
+  bottom: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
+  background: #ffc00e;
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.open-professional .last-professional {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 200deg);
+  opacity: 1;
+}
+
+.open-professional .last-professional:hover {
+  background: #1a1301;
+  color: #ffc00e;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.open-professional .last-professional:active {
+  background: #806007;
+  color: #ffc00e;
+}
+
+.open-professional .last-professional.toggle-professional {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 20deg);
+}
+
+/* ********************* */
+
+.toggle-professional {
+  line-height: 100px;
+  padding: 0;
+  width: 100px;
+  background: pink;
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  pointer-events: auto;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  color: #921620;
+}
+
+.open-professional .toggle-professional {
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+}
+
+.toggle-professional:hover {
+  background: #1a1600;
+  color: #ffc00e;
+}
+
+.toggle-professional:active {
+  background: #806c00;
+  color: rgba(255, 215, 0, 0.5);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+}
