@@ -44,9 +44,6 @@ class Navigation extends Component {
         <MenuPersonal />
 
         <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
           <Route path="/home">
             <Home />
           </Route>
@@ -88,6 +85,10 @@ class Navigation extends Component {
           </Route>
           <Route path="/personal/trust-the-boa">
             <TrustTheBoa />
+          </Route>
+
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
