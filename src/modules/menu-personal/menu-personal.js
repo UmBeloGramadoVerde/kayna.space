@@ -20,6 +20,7 @@ export default class MenuPersonal extends Component {
         if (nav.parentNode.classList.contains('active-menu')) {
           setTimeout(function () {
             nav.parentNode.classList.toggle('active-menu');
+            document.getElementsByClassName('menu-personal-container')[0].style.right = '0px';
           }.bind(this), 700);
         }
         else {
@@ -34,6 +35,12 @@ export default class MenuPersonal extends Component {
       },
       false
     );
+
+    ([...document.querySelectorAll('.disc-personal:not(.last-personal)')]).forEach((el) => {
+      el.addEventListener('click', () => {
+        document.querySelectorAll('.toggle-personal')[0].dispatchEvent(new Event('click'));
+      }, false)
+    });
   }
 
   render() {
@@ -41,7 +48,6 @@ export default class MenuPersonal extends Component {
       <div className="menu-personal-container">
         <nav class="menu-personal">
           <a class="disc-personal l1-personal">
-            {/* <div><Link to="/personal/belo-gramado-verde">Belo Gramado Verde</Link></div> */}
             <div><Link to="/personal/belo-gramado-verde">Belo Gramado Verde</Link></div>
           </a>
           <a class="disc-personal l2-personal">

@@ -28,7 +28,7 @@ export default class Background extends Component {
   NUM_PARTICLES = 0;
 
   palette_initial = ['#28464B', '#326771', '#2C8C99', '#42D9C8'];
-  palette = ['#282960', '#372767', '#4C256F', '#662376', '#7D2175', '#ffc0cb', '#ffc00e',];
+  palette = ['#282960', '#4C256F', '#7D2175', '#ffc0cb', '#ffc00e',];
   WIND_SPEED = 3;
   WIND_VARIANCE = 0.05;
   yoff = 0;

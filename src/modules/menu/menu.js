@@ -52,6 +52,9 @@ export default class Menu extends Component {
     document.getElementsByClassName('menu-personal-container')[0].style.visibility = 'visible';
     document.getElementsByClassName('last-personal')[0].style.visibility = 'visible';
     document.querySelectorAll('.toggle')[0].dispatchEvent(new Event('click'));
+    setTimeout(function () {
+      document.querySelectorAll('.toggle-personal')[0].dispatchEvent(new Event('click'));
+    }.bind(this), 500);
   }
 
   toggle_open_menu_professional() {
@@ -60,6 +63,9 @@ export default class Menu extends Component {
     document.getElementsByClassName('menu-professional-container')[0].style.visibility = 'visible';
     document.getElementsByClassName('last-professional')[0].style.visibility = 'visible';
     document.querySelectorAll('.toggle')[0].dispatchEvent(new Event('click'));
+    setTimeout(function () {
+      document.querySelectorAll('.toggle-professional')[0].dispatchEvent(new Event('click'));
+    }.bind(this), 500);
   }
 
   render() {

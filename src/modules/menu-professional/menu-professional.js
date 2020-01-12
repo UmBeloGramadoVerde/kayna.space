@@ -20,6 +20,7 @@ export default class MenuProfessional extends Component {
         if (nav.parentNode.classList.contains('active-menu')) {
           setTimeout(function () {
             nav.parentNode.classList.toggle('active-menu');
+            document.getElementsByClassName('menu-professional-container')[0].style.top = '0px';
           }.bind(this), 700);
         }
         else {
@@ -34,6 +35,12 @@ export default class MenuProfessional extends Component {
       },
       false
     );
+
+    ([...document.querySelectorAll('.disc-professional:not(.last-professional)')]).forEach((el) => {
+      el.addEventListener('click', () => {
+        document.querySelectorAll('.toggle-professional')[0].dispatchEvent(new Event('click'));
+      }, false)
+    });
   }
 
   render() {
