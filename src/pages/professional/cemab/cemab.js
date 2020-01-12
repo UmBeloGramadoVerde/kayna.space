@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import '../../shared/styles.css';
 
 export default class Cemab extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     return (
       <div className="content">
