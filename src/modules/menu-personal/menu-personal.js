@@ -47,26 +47,23 @@ export default class MenuPersonal extends Component {
     return (
       <div className="menu-personal-container">
         <nav class="menu-personal">
-          <a class="disc-personal l1-personal">
+          <a class="disc-personal l2-personal">
             <div><Link to="/personal/belo-gramado-verde">Belo Gramado Verde</Link></div>
           </a>
-          <a class="disc-personal l2-personal">
+          <a class="disc-personal l3-personal">
             <div><Link to="/personal/horse-with-no-name">Horse With No Name</Link></div>
           </a>
-          <a class="disc-personal l3-personal">
+          <a class="disc-personal l4-personal">
             <div><Link to="/personal/trust-the-boa">Trust The Boa</Link></div>
           </a>
-          <a class="disc-personal l4-personal">
+          <a class="disc-personal l5-personal">
             <div><Link to="/personal/arquivo-world">Arquivo World</Link></div>
           </a>
-          <a class="disc-personal l5-personal">
+          <a class="disc-personal l6-personal">
             <div><Link to="/personal/bauhaus-tour">Bauhaus Tour</Link></div>
           </a>
-          <a class="disc-personal l6-personal">
-            <div><Link to="/personal/code-race">Code Race</Link></div>
-          </a>
           <a class="disc-personal l7-personal">
-            <div><Link to="/home">Home</Link></div>
+            <div><Link to="/personal/code-race">Code Race</Link></div>
           </a>
           <a class="disc-personal last-personal toggle-personal">Per</a>
         </nav>

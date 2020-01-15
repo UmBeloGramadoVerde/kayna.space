@@ -3,7 +3,7 @@ import '../../shared/styles.css';
 
 export default class Configr extends Component {
   componentDidMount() {
-    window.scrollTo({top: 0, behavior: 'smooth'})
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   render() {
     return (
@@ -30,6 +30,10 @@ export default class Configr extends Component {
           I learned a lot about server administration, back-end engineering
           and devops in general. I also had the opportunity to work with
           automation using shell scripting and python.
+        </h4>
+
+        <h4 class="expansive_bois">
+          Their website <a href="https://configr.com/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
         </h4>
 
         <div className="image-gallery">

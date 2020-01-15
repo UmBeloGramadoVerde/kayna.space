@@ -8,7 +8,7 @@ export default class RepulsionHandler extends Component {
     this.bg = React.createRef();
     this.circles = [];
     this.DOMexpansiveBois = [];
-    this.previousHeigth = 0;
+    this.previousTime = 0;
   }
 
   componentDidMount() {
@@ -44,9 +44,18 @@ export default class RepulsionHandler extends Component {
   }
 
   handleScroll() {
-    this.circles = [];
-    this.DOMexpansiveBois = document.getElementsByClassName('expansive_bois');
-    if (Math.abs(this.previousHeigth - this.DOMexpansiveBois[0].clientHeight) >= 2) {
+    let currentTime = Date.now();
+    let timeDifferenceCutoff = 75;
+    /* This 75 was pure trial and error */
+    /* The bigger timeDifferenceCutoff is, the bigger the lag of the div position recognition */
+    /* The smaller it is, more scroll events have to be dealt with */
+    /* Was this a good attempt at optimization ? */
+    if (Math.abs(currentTime - this.previousTime) >= timeDifferenceCutoff) {
+      this.previousTime = currentTime;
+
+      this.circles = [];
+      this.DOMexpansiveBois = document.getElementsByClassName('expansive_bois');
+
       for (let index = 0; index < this.DOMexpansiveBois.length; index++) {
         const element = this.DOMexpansiveBois[index];
         if (!this.circles[index]) {

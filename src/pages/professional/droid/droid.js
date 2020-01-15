@@ -8,7 +8,7 @@ export default class Droid extends Component {
   }
 
   componentDidMount() {
-    window.scrollTo({top: 0, behavior: 'smooth'})
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   render() {
     return (
@@ -42,6 +42,10 @@ export default class Droid extends Component {
         <h4 className="expansive_bois">
           We used C and a custom framework for the SEK platform to build
           everything.
+        </h4>
+
+        <h4 class="expansive_bois">
+          Their facebook page <a href="https://www.facebook.com/droidunb" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
         </h4>
 
         <div className="image-gallery">

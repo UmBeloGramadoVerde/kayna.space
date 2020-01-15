@@ -28,11 +28,6 @@ h4.expansive_bois:nth-child(even) {
   float: right;
 }
 
-h4.expansive_bois:last-of-type {
-  text-align: right;
-  float: right;
-}
-
 /* Narrow */
 @media screen and (max-width: 768px) {
   h1.expansive_bois {

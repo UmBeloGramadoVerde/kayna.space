@@ -21,6 +21,10 @@ export default class BeloGramadoVerde extends Component {
         </h4>
         <h4 className="expansive_bois">This brings me a lot of joy.</h4>
 
+        <h4 class="expansive_bois">
+          The Instagram page <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+        </h4>
+
         <div className="image-gallery">
           <figure>
             <img src="/images/calligraphy/calligraphy-02.jpg" alt="Droid 2" />

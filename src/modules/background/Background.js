@@ -62,8 +62,8 @@ export default class Background extends Component {
       new toxi.geom.Rect(
         this.options.PARTICLE_RADIUS * -1,
         this.options.PARTICLE_RADIUS * -1,
-        this.WIDTH + (this.options.PARTICLE_RADIUS * 2),
-        this.HEIGHT + (this.options.PARTICLE_RADIUS * 2)
+        this.WIDTH + (this.options.PARTICLE_RADIUS * 3),
+        this.HEIGHT + (this.options.PARTICLE_RADIUS * 3)
       )
     );
     this.setBehaviours(this.circles);
@@ -121,8 +121,8 @@ export default class Background extends Component {
       new toxi.geom.Rect(
         this.options.PARTICLE_RADIUS * -1,
         this.options.PARTICLE_RADIUS * -1,
-        window.innerWidth + this.options.PARTICLE_RADIUS,
-        window.innerHeight + this.options.PARTICLE_RADIUS
+        this.WIDTH + (this.options.PARTICLE_RADIUS * 3),
+        this.HEIGHT + (this.options.PARTICLE_RADIUS * 3)
       )
     );
     this.PARTICLE_QUANTITY_RATIO = ((this.WIDTH / (this.options.INNER_RADIUS / 2)) *
@@ -158,6 +158,7 @@ export default class Background extends Component {
         this.circleBehaviours.length > circles.length
           ? this.circleBehaviours.length
           : circles.length;
+      // I'm trying to avoid two for's
       // Optimization, hopefully
       for (let index = 0; index < length; index++) {
         if (index < this.circleBehaviours.length) {

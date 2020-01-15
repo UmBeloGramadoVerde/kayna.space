@@ -47,26 +47,20 @@ export default class MenuProfessional extends Component {
     return (
       <div className="menu-professional-container">
         <nav class="menu-professional">
-          <a class="disc-professional l1-professional">
+          <a class="disc-professional l3-professional">
             <div><Link to="/professional/configr">Configr</Link></div>
           </a>
-          <a class="disc-professional l2-professional">
+          <a class="disc-professional l4-professional">
             <div><Link to="/professional/droid">Droid</Link></div>
           </a>
-          <a class="disc-professional l3-professional">
+          <a class="disc-professional l5-professional">
             <div><Link to="/professional/altran">Altran</Link></div>
           </a>
-          <a class="disc-professional l4-professional">
+          <a class="disc-professional l6-professional">
             <div><Link to="/professional/cemab">Cemab</Link></div>
           </a>
-          <a class="disc-professional l5-professional">
-            <div><Link to="/professional/sinatep">Sinatep</Link></div>
-          </a>
-          <a class="disc-professional l6-professional">
-            <div><Link to="/additions">Additions</Link></div>
-          </a>
           <a class="disc-professional l7-professional">
-            <div><Link to="/home">Home</Link></div>
+            <div><Link to="/professional/sinatep">Sinatep</Link></div>
           </a>
           <a class="disc-professional last-professional toggle-professional">Pro</a>
         </nav>
