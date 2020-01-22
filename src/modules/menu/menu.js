@@ -68,6 +68,10 @@ export default class Menu extends Component {
     }.bind(this), 500);
   }
 
+  dispatchClick() {
+    document.querySelectorAll('.toggle')[0].dispatchEvent(new Event('click'));
+  }
+
   render() {
     return (
       <div className="menu-container">
@@ -78,7 +82,7 @@ export default class Menu extends Component {
           <a class="disc l6">
             <div onClick={this.toggle_open_menu_professional}>Professional</div>
           </a>
-          <a class="disc l7">
+          <a class="disc l7" onClick={this.dispatchClick}>
             <div><Link to="/home">Home</Link></div>
           </a>
           <a class="disc last toggle" onClick={this.toggle_open_menu}>Menu</a>

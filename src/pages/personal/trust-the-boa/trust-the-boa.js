@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class TrustTheBoa extends Component {
   componentDidMount() {
@@ -20,7 +20,7 @@ export default class TrustTheBoa extends Component {
           I made the e-commerce website with wordpress, made all the designs and logo with illustrator and product management. The most fun part is giving a prompt to an artist and letting them work however they want with it.
         </h4>
         <h4 class="expansive_bois">
-          Our store <a href="https://trusttheboa.com/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          Our store <a href="https://trusttheboa.com/" target="_blank" class="arrow_link">→</a>
         </h4>
 
         <div className="image-gallery">

@@ -16,6 +16,14 @@ export default class RepulsionHandler extends Component {
       capture: true,
       passive: true
     });
+    window.addEventListener('touchend', this.handleScroll.bind(this), {
+      capture: true,
+      passive: true
+    });
+    window.addEventListener('touchstart', this.handleScroll.bind(this), {
+      capture: true,
+      passive: true
+    });
     window.addEventListener('pageChange', this.handleScroll.bind(this), {
       capture: true,
       passive: true
@@ -45,7 +53,7 @@ export default class RepulsionHandler extends Component {
 
   handleScroll() {
     let currentTime = Date.now();
-    let timeDifferenceCutoff = 75;
+    let timeDifferenceCutoff = 100;
     /* This 75 was pure trial and error */
     /* The bigger timeDifferenceCutoff is, the bigger the lag of the div position recognition */
     /* The smaller it is, more scroll events have to be dealt with */

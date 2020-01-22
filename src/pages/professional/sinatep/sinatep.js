@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class Sinatep extends Component {
   componentDidMount() {
@@ -29,7 +29,7 @@ export default class Sinatep extends Component {
         </h4>
 
         <h4 class="expansive_bois">
-          Their page <a href="https://sinatep.com.br/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          Their page <a href="https://sinatep.com.br/" target="_blank" class="arrow_link">→</a>
         </h4>
       </div>
     );

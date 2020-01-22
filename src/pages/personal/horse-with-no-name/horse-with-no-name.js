@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class HorseWithNoName extends Component {
   componentDidMount() {

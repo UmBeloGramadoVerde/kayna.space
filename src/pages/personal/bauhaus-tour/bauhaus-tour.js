@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class BauhausTour extends Component {
   componentDidMount() {
@@ -48,9 +48,9 @@ export default class BauhausTour extends Component {
         </div>
 
         <h4 class="expansive_bois">
-          The website <a href="https://editor.p5js.org/umbelogramadoverde/present/brN3rEw3Z" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          The website <a href="https://editor.p5js.org/umbelogramadoverde/present/brN3rEw3Z" target="_blank" class="arrow_link">→</a>
           <br />
-          The code <a href="https://editor.p5js.org/umbelogramadoverde/sketches/brN3rEw3Z" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          The code <a href="https://editor.p5js.org/umbelogramadoverde/sketches/brN3rEw3Z" target="_blank" class="arrow_link">→</a>
         </h4>
       </div>
     );

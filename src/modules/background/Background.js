@@ -62,8 +62,8 @@ export default class Background extends Component {
       new toxi.geom.Rect(
         this.options.PARTICLE_RADIUS * -1,
         this.options.PARTICLE_RADIUS * -1,
-        this.WIDTH + (this.options.PARTICLE_RADIUS * 3),
-        this.HEIGHT + (this.options.PARTICLE_RADIUS * 3)
+        this.WIDTH * 1.1,
+        this.HEIGHT * 1.1
       )
     );
     this.setBehaviours(this.circles);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class BeloGramadoVerde extends Component {
   componentDidMount() {
@@ -22,7 +22,7 @@ export default class BeloGramadoVerde extends Component {
         <h4 className="expansive_bois">This brings me a lot of joy.</h4>
 
         <h4 class="expansive_bois">
-          The Instagram page <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          The Instagram page <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank" class="arrow_link">→</a>
         </h4>
 
         <div className="image-gallery">

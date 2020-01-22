@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class Configr extends Component {
   componentDidMount() {
@@ -33,7 +33,7 @@ export default class Configr extends Component {
         </h4>
 
         <h4 class="expansive_bois">
-          Their website <a href="https://configr.com/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          Their website <a href="https://configr.com/" target="_blank" class="arrow_link">→</a>
         </h4>
 
         <div className="image-gallery">

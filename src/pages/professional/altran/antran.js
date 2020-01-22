@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class Altran extends Component {
   componentDidMount() {
@@ -30,7 +30,7 @@ export default class Altran extends Component {
         </h4>
 
         <h4 class="expansive_bois">
-          My departament's page <a href="https://www.altran.com/pt/pt-pt/digital/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          My departament's page <a href="https://www.altran.com/pt/pt-pt/digital/" target="_blank" class="arrow_link">→</a>
         </h4>
       </div>
     );

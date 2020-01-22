@@ -168,7 +168,7 @@ a {
   left: calc(2 * var(--size) / (var(--disc-number) / 4));
   right: calc(2 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(2 * var(--size) / (var(--disc-number) / 4));
-  background: #4c256f;
+  background: #372767;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
@@ -205,7 +205,7 @@ a {
   left: calc(3 * var(--size) / (var(--disc-number) / 4));
   right: calc(3 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(3 * var(--size) / (var(--disc-number) / 4));
-  background: #662376;
+  background: #4c256f;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
@@ -242,7 +242,7 @@ a {
   left: calc(4 * var(--size) / (var(--disc-number) / 4));
   right: calc(4 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(4 * var(--size) / (var(--disc-number) / 4));
-  background: #7d2175;
+  background: #662376;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
@@ -279,7 +279,7 @@ a {
   left: calc(5 * var(--size) / (var(--disc-number) / 4));
   right: calc(5 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(5 * var(--size) / (var(--disc-number) / 4));
-  background: #8b1a43;
+  background: #7d2175;
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
@@ -316,7 +316,7 @@ a {
   left: calc(6 * var(--size) / (var(--disc-number) / 4));
   right: calc(6 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(6 * var(--size) / (var(--disc-number) / 4));
-  background: #921620;
+  background: #8b1a43;
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }

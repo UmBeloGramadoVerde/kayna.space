@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../shared/styles.css';
+import '../../shared/styles.scss';
 
 export default class Cemab extends Component {
   componentDidMount() {
@@ -41,7 +41,7 @@ export default class Cemab extends Component {
           always taught things we thought were fun and the kids LOVED IT.
         </h4>
         <h4 class="expansive_bois">
-          Their page <a href="https://www.cemab.com.br/" target="_blank" style={{ color: '#ffc00e', fontSize: 3.5 + 'rem' }}>→</a>
+          Their page <a href="https://www.cemab.com.br/" target="_blank" class="arrow_link">→</a>
         </h4>
         <h4 className="expansive_bois">
           The following pictures are not specifically from CEMAB,
