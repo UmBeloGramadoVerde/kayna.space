@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './menu-personal.css';
+import './menu-personal.scss';
 
 export default class MenuPersonal extends Component {
   constructor(props) {
@@ -11,15 +11,23 @@ export default class MenuPersonal extends Component {
     var toggle = document.querySelectorAll('.toggle-personal')[0];
     var nav = document.querySelectorAll('.menu-personal')[0];
     var toggle_open_text = '💃🏾';
-    var toggle_close_text = '&#10005;';
+    var toggle_close_text = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 449.998 449.998" style="enable-background:new 0 0 449.998 449.998;" xml:space="preserve">
+ <g>
+   <g>
+     <polygon points="449.974,34.855 415.191,0 225.007,190.184 34.839,0 0.024,34.839 190.192,224.999 
+       0.024,415.159 34.839,449.998 225.007,259.797 415.191,449.998 449.974,415.143 259.83,224.999 		"/>
+   </g>
+ </g>
+ </svg>`;
 
     toggle.addEventListener(
       'click',
-      function() {
+      function () {
         nav.classList.toggle('open-personal');
         if (nav.parentNode.classList.contains('active-menu')) {
           setTimeout(
-            function() {
+            function () {
               nav.parentNode.classList.toggle('active-menu');
               document.getElementsByClassName(
                 'menu-personal-container'
@@ -33,7 +41,7 @@ export default class MenuPersonal extends Component {
 
         if (nav.classList.contains('open-personal')) {
           setTimeout(
-            function() {
+            function () {
               toggle.innerHTML = toggle_close_text;
             }.bind(this),
             1000

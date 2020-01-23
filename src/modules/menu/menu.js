@@ -10,8 +10,25 @@ export default class Menu extends Component {
   componentDidMount() {
     var toggle = document.querySelectorAll('.toggle')[0];
     var nav = document.querySelectorAll('.menu')[0];
-    var toggle_open_text = '&#9776;';
-    var toggle_close_text = '&#10005;';
+    var toggle_open_text = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" viewBox="0 0 341.333 341.333" style="enable-background:new 0 0 341.333 341.333;" xml:space="preserve">
+    <g>
+      <g>
+        <rect y="277.333" width="341.333" height="42.667" />
+        <rect y="149.333" width="341.333" height="42.667" />
+        <rect y="21.333" width="341.333" height="42.667" />
+      </g>
+    </g>
+  </svg>`;
+    var toggle_close_text = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 449.998 449.998" style="enable-background:new 0 0 449.998 449.998;" xml:space="preserve">
+ <g>
+   <g>
+     <polygon points="449.974,34.855 415.191,0 225.007,190.184 34.839,0 0.024,34.839 190.192,224.999 
+       0.024,415.159 34.839,449.998 225.007,259.797 415.191,449.998 449.974,415.143 259.83,224.999 		"/>
+   </g>
+ </g>
+ </svg>`;
 
     toggle.addEventListener(
       'click',
@@ -85,9 +102,20 @@ export default class Menu extends Component {
           <a class="disc l7" onClick={this.dispatchClick}>
             <div><Link to="/home">Home</Link></div>
           </a>
-          <a class="disc last toggle" onClick={this.toggle_open_menu}>&#9776;</a>
+          <a class="disc last toggle" onClick={this.toggle_open_menu}>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 341.333 341.333">
+              <g>
+                <g>
+                  <rect y="277.333" width="341.333" height="42.667" />
+                  <rect y="149.333" width="341.333" height="42.667" />
+                  <rect y="21.333" width="341.333" height="42.667" />
+                </g>
+              </g>
+            </svg>
+          </a>
         </nav>
-      </div>
+      </div >
     );
   }
 }

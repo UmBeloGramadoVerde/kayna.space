@@ -352,6 +352,12 @@ a {
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s;
   font-size: 35px;
+  svg {
+    position: relative;
+    width: 33%;
+    top: 6px;
+    fill: #931621;
+  }
 }
 
 .open-personal .last-personal {
@@ -367,6 +373,9 @@ a {
   color: #ffc00e;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  svg {
+    fill: #ffc00e;
+  }
 }
 
 .open-personal .last-personal:active {
@@ -403,6 +412,9 @@ a {
 .toggle-personal:hover {
   background: #1a1600;
   color: #ffc00e;
+  svg {
+    fill: #ffc00e;
+  }
 }
 
 .toggle-personal:active {

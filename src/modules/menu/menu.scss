@@ -355,7 +355,12 @@ a {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
   visibility: visible;
-  font-size: 35px;
+  svg {
+    position: relative;
+    width: 33%;
+    top: 6px;
+    fill: #931621;
+  }
 }
 
 .open .last {
@@ -371,6 +376,9 @@ a {
   color: #ffc00e;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  svg {
+    fill: #ffc00e;
+  }
 }
 
 .open .last:active {
@@ -407,6 +415,9 @@ a {
 .toggle:hover {
   background: #1a1600;
   color: #ffc00e;
+  svg {
+    fill: #ffc00e;
+  }
 }
 
 .toggle:active {
