@@ -11,7 +11,7 @@ export default class Configr extends Component {
         <h1 className="expansive_bois">Configr</h1>
         <p></p>
         <h4 className="expansive_bois">
-          When working for configr I was able to coordinate the web
+          When working for <a href="https://configr.com/" target="_blank">Configr</a> I was able to coordinate the web
           application migration team.
         </h4>
         <h4 className="expansive_bois">
@@ -23,17 +23,13 @@ export default class Configr extends Component {
           became really good friends.
         </h4>
         <h4 className="expansive_bois">
-          Special thanks to the CTO Felipe, one of my best friends ever, who
+          Special thanks to the CTO <a href="https://www.linkedin.com/in/felipetomaz/" target="_blank">Felipe</a>, one of my best friends ever, who
           recently became a father (congratulations, Felipe and Lais).
         </h4>
         <h4 className="expansive_bois">
           I learned a lot about server administration, back-end engineering
           and devops in general. I also had the opportunity to work with
           automation using shell scripting and python.
-        </h4>
-
-        <h4 class="expansive_bois">
-          Their website <a href="https://configr.com/" target="_blank" class="arrow_link">→</a>
         </h4>
 
         <div className="image-gallery">

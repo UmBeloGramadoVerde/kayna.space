@@ -356,6 +356,7 @@ a {
   background: #ffc00e;
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s;
+  font-size: 35px;
 }
 
 .open-professional .last-professional {

@@ -6,9 +6,21 @@
 }
 
 .footer-icon {
-  width: 3vw;
+  width: 7vw;
   padding-left: 1vw;
   padding-right: 1vw;
   padding-bottom: 1vh;
   fill: pink;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1360px) {
+  .footer-icon {
+    width: 5vw;
+  }
+}
+
+@media screen and (min-width: 1361px) {
+  .footer-icon {
+    width: 3vw;
+  }
 }

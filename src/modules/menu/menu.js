@@ -10,8 +10,8 @@ export default class Menu extends Component {
   componentDidMount() {
     var toggle = document.querySelectorAll('.toggle')[0];
     var nav = document.querySelectorAll('.menu')[0];
-    var toggle_open_text = 'Menu';
-    var toggle_close_text = 'Close';
+    var toggle_open_text = '&#9776;';
+    var toggle_close_text = '&#10005;';
 
     toggle.addEventListener(
       'click',
@@ -85,7 +85,7 @@ export default class Menu extends Component {
           <a class="disc l7" onClick={this.dispatchClick}>
             <div><Link to="/home">Home</Link></div>
           </a>
-          <a class="disc last toggle" onClick={this.toggle_open_menu}>Menu</a>
+          <a class="disc last toggle" onClick={this.toggle_open_menu}>&#9776;</a>
         </nav>
       </div>
     );

@@ -16,7 +16,7 @@ export default class Droid extends Component {
         <h1 className="expansive_bois">Droid</h1>
         <p></p>
         <h4 className="expansive_bois">
-          Droid - UnB is a robotics competition team and I was very fortunate to
+          <a href="https://www.facebook.com/droidunb" target="_blank">Droid - UnB</a> is a robotics competition team and I was very fortunate to
           be accepted to join them.
         </h4>
         <h4 className="expansive_bois">
@@ -42,10 +42,6 @@ export default class Droid extends Component {
         <h4 className="expansive_bois">
           We used C and a custom framework for the SEK platform to build
           everything.
-        </h4>
-
-        <h4 class="expansive_bois">
-          Their facebook page <a href="https://www.facebook.com/droidunb" target="_blank" class="arrow_link">→</a>
         </h4>
 
         <div className="image-gallery">

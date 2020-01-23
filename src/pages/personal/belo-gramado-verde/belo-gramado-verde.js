@@ -15,15 +15,11 @@ export default class BeloGramadoVerde extends Component {
           but what really interests me is experimenting with everything.
         </h4>
         <h4 className="expansive_bois">
-          Um Belo Gramado Verde is my Instagram page where I dump my experiments
+          <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank">Um Belo Gramado Verde</a> is my Instagram page where I dump my experiments
           and pieces from different proposals. I have made graffiti, body art,
           ink on paper and clothing.
         </h4>
         <h4 className="expansive_bois">This brings me a lot of joy.</h4>
-
-        <h4 class="expansive_bois">
-          The Instagram page <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank" class="arrow_link">→</a>
-        </h4>
 
         <div className="image-gallery">
           <figure>

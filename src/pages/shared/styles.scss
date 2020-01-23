@@ -4,7 +4,8 @@
   width: 80vw;
 }
 
-h1, h4 {
+h1,
+h4 {
   color: pink;
   display: inline-block;
 }
@@ -39,7 +40,7 @@ h4.expansive_bois:nth-child(even) {
 }
 
 /* Mid */
-@media screen and (min-width: 769px) and (max-width: 1365px){
+@media screen and (min-width: 769px) and (max-width: 1365px) {
   h1.expansive_bois {
     font-size: 13rem;
   }
@@ -49,7 +50,7 @@ h4.expansive_bois:nth-child(even) {
 }
 
 /* Mid-wide */
-@media screen and (min-width: 1366px) and (max-width: 1920px){
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
   h1.expansive_bois {
     font-size: 11rem;
   }
@@ -70,31 +71,46 @@ h4.expansive_bois:nth-child(even) {
 
 .content {
   a:not(.arrow_link) {
-      color: #ffc00e;
-      position: relative;
-      display: inline-block;
+    /* color: #ffc00e; */
+    color: inherit;
+    position: relative;
+    white-space: nowrap;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(/images/waaave.svg);
+      background-position: 5px 1.15em;
+      background-repeat: repeat-x;
+      background-size: 15px 5px;
+      padding-bottom: 0.5em;
+      transition: background-position 1s linear ;
+      filter: invert(71%) sepia(98%) saturate(649%) hue-rotate(346deg)
+        brightness(100%) contrast(105%);
+    }
+    &:hover {
+      /* color: #282960; */
       &::after {
-          content: "";
-          position: absolute;
-          top: 0; left: 0;
-          width: 100%; height: 100%;
-          background-image: url(/images/waaave.svg);
-          background-position: 5px 1.25em;
-          background-repeat: repeat-x;
-          background-size: 15px 5px;
-          padding-bottom: 0.3em;
-          filter: invert(12%) sepia(32%) saturate(3931%) hue-rotate(226deg) brightness(94%) contrast(91%);
+        animation-name: link;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        /* filter: invert(12%) sepia(32%) saturate(3931%) hue-rotate(226deg)
+          brightness(94%) contrast(91%); */
       }
-      &:hover {
-          color: #282960;
-          &::after {
-              filter: invert(71%) sepia(98%) saturate(649%) hue-rotate(346deg) brightness(100%) contrast(105%);
-          }
-      }
+    }
   }
 }
 
 .arrow_link {
   color: #ffc00e;
   font-size: 3.5rem;
+}
+
+@keyframes link {
+  from {background-position: 5px 1.15em;}
+  to {background-position: 20px 1.15em;}
 }

@@ -28,9 +28,6 @@ nav.menu-personal {
     -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
 
-nav.open-personal {
-}
-
 nav.menu-personal {
   position: relative;
   bottom: calc(calc(var(--size) * (var(--disc-number) / 2)) + -62px);
@@ -354,6 +351,7 @@ a {
   background: #ffc00e;
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s;
+  font-size: 35px;
 }
 
 .open-personal .last-personal {

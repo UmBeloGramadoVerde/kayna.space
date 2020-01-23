@@ -49,6 +49,21 @@ export default class CodeRace extends Component {
         <h4 className="expansive_bois">
           We got second place and everybody took a sick drone home.
         </h4>
+
+        <div className="image-gallery">
+          <figure>
+            <img src="/images/code-race/code-race-1.jpg" alt="Code Race 1" />
+          </figure>
+          <figure>
+            <img src="/images/code-race/code-race-2.jpg" alt="Code Race 2" />
+          </figure>
+          <figure>
+            <img src="/images/code-race/code-race-3.jpg" alt="Code Race 3" />
+          </figure>
+          <figure>
+            <img src="/images/code-race/code-race-4.jpg" alt="Code Race 4" />
+          </figure>
+        </div>
       </div>
     );
   }

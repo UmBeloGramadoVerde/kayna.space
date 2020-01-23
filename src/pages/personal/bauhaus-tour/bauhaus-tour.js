@@ -18,8 +18,8 @@ export default class BauhausTour extends Component {
         </h4>
         <h4 className="expansive_bois">
           I tried to fit the assignment that I had to do with what I was
-          interested in studying. With that in mind I built a cool presentation
-          about the Bauhaus history using the mapbox API, more specifically the
+          interested in studying. With that in mind I 
+          built <a href="https://editor.p5js.org/umbelogramadoverde/present/brN3rEw3Z" target="_blank">a cool presentation</a> about the Bauhaus history using the mapbox API, more specifically the
           3D rendering of the maps, because it looked really dope.
         </h4>
         <h4 className="expansive_bois">
@@ -34,16 +34,16 @@ export default class BauhausTour extends Component {
 
         <div className="image-gallery">
           <figure>
-            <img src="/images/bauhaus-tour/bauhaus-1.jpg" alt="Bauhaus Tour 1" />
+            <img src="/images/bauhaus-tour/bauhaus-01.jpg" alt="Bauhaus Tour 1" />
           </figure>
           <figure>
-            <img src="/images/bauhaus-tour/bauhaus-2.jpg" alt="Bauhaus Tour 2" />
+            <img src="/images/bauhaus-tour/bauhaus-02.jpg" alt="Bauhaus Tour 2" />
           </figure>
           <figure>
-            <img src="/images/bauhaus-tour/bauhaus-4.jpg" alt="Bauhaus Tour 4" />
+            <img src="/images/bauhaus-tour/bauhaus-04.jpg" alt="Bauhaus Tour 4" />
           </figure>
           <figure>
-            <img src="/images/bauhaus-tour/bauhaus-5.jpg" alt="Bauhaus Tour 5" />
+            <img src="/images/bauhaus-tour/bauhaus-05.jpg" alt="Bauhaus Tour 5" />
           </figure>
         </div>
 

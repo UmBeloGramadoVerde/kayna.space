@@ -10,25 +10,34 @@ export default class MenuProfessional extends Component {
   componentDidMount() {
     var toggle = document.querySelectorAll('.toggle-professional')[0];
     var nav = document.querySelectorAll('.menu-professional')[0];
-    var toggle_open_text = 'Pro';
-    var toggle_close_text = 'Close';
+    var toggle_open_text = '👨🏾‍💻';
+    var toggle_close_text = '&#10005;';
 
     toggle.addEventListener(
       'click',
-      function () {
+      function() {
         nav.classList.toggle('open-professional');
         if (nav.parentNode.classList.contains('active-menu')) {
-          setTimeout(function () {
-            nav.parentNode.classList.toggle('active-menu');
-            document.getElementsByClassName('menu-professional-container')[0].style.top = '0px';
-          }.bind(this), 700);
-        }
-        else {
+          setTimeout(
+            function() {
+              nav.parentNode.classList.toggle('active-menu');
+              document.getElementsByClassName(
+                'menu-professional-container'
+              )[0].style.top = '0px';
+            }.bind(this),
+            700
+          );
+        } else {
           nav.parentNode.classList.toggle('active-menu');
         }
 
         if (nav.classList.contains('open-professional')) {
-          toggle.innerHTML = toggle_close_text;
+          setTimeout(
+            function() {
+              toggle.innerHTML = toggle_close_text;
+            }.bind(this),
+            1100
+          );
         } else {
           toggle.innerHTML = toggle_open_text;
         }
@@ -36,33 +45,58 @@ export default class MenuProfessional extends Component {
       false
     );
 
-    ([...document.querySelectorAll('.disc-professional:not(.last-professional)')]).forEach((el) => {
-      el.addEventListener('click', () => {
-        document.querySelectorAll('.toggle-professional')[0].dispatchEvent(new Event('click'));
-      }, false)
+    [
+      ...document.querySelectorAll('.disc-professional:not(.last-professional)')
+    ].forEach(el => {
+      el.addEventListener(
+        'click',
+        () => {
+          document
+            .querySelectorAll('.toggle-professional')[0]
+            .dispatchEvent(new Event('click'));
+        },
+        false
+      );
     });
   }
 
   render() {
     return (
-      <div className="menu-professional-container">
-        <nav class="menu-professional">
-          <a class="disc-professional l3-professional">
-            <div><Link to="/professional/configr">Configr</Link></div>
+      <div className='menu-professional-container'>
+        <nav class='menu-professional'>
+          <Link
+            class='disc-professional l3-professional'
+            to='/professional/configr'
+          >
+            <div>Configr</div>
+          </Link>
+          <Link
+            class='disc-professional l4-professional'
+            to='/professional/droid'
+          >
+            <div>Droid</div>
+          </Link>
+          <Link
+            class='disc-professional l5-professional'
+            to='/professional/altran'
+          >
+            <div>Altran</div>
+          </Link>
+          <Link
+            class='disc-professional l6-professional'
+            to='/professional/cemab'
+          >
+            <div>Cemab</div>
+          </Link>
+          <Link
+            class='disc-professional l7-professional'
+            to='/professional/sinatep'
+          >
+            <div>Sinatep</div>
+          </Link>
+          <a class='disc-professional last-professional toggle-professional'>
+            👨🏾‍💻
           </a>
-          <a class="disc-professional l4-professional">
-            <div><Link to="/professional/droid">Droid</Link></div>
-          </a>
-          <a class="disc-professional l5-professional">
-            <div><Link to="/professional/altran">Altran</Link></div>
-          </a>
-          <a class="disc-professional l6-professional">
-            <div><Link to="/professional/cemab">Cemab</Link></div>
-          </a>
-          <a class="disc-professional l7-professional">
-            <div><Link to="/professional/sinatep">Sinatep</Link></div>
-          </a>
-          <a class="disc-professional last-professional toggle-professional">Pro</a>
         </nav>
       </div>
     );
