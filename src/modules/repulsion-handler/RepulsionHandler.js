@@ -10,7 +10,7 @@ export default class RepulsionHandler extends Component {
     this.DOMexpansiveBois = [];
     this.previousTime = 0;
     this.previousHeigth = 0;
-    this.canvasIsBig = false;
+    this.bigCanvasHeight = 0;
   }
 
   componentDidMount() {
@@ -42,10 +42,10 @@ export default class RepulsionHandler extends Component {
         this.bg.current.resize(innerWidth, innerHeight);
       }
       /* If we are dealing with a url bar size change ... */
-      else if (!this.canvasIsBig) {
+      else if (innerHeight > this.bigCanvasHeight) {
         /* document.querySelectorAll('.Background')[0].style.height = `calc(100vh + ${diff}px)`; */
         this.bg.current.resize(innerWidth, innerHeight);
-        this.canvasIsBig = true;
+        this.bigCanvasHeight = innerHeight;
       }
     });
   }
