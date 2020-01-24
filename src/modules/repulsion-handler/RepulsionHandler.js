@@ -10,6 +10,7 @@ export default class RepulsionHandler extends Component {
     this.DOMexpansiveBois = [];
     this.previousTime = 0;
     this.previousHeigth = 0;
+    this.canvasIsBig = false;
   }
 
   componentDidMount() {
@@ -37,10 +38,14 @@ export default class RepulsionHandler extends Component {
       this.previousHeigth = innerHeight;
       /* I have to map all the url bar sizes */
       /* This is a dumb implementation, there is probably a smart way of getting the size */
-      if ((diff !== 56) && (diff !== 75) && (diff !== 76) && (diff !== 0)) {
+      if ((diff !== 56) && (diff !== 75) && (diff !== 76)) {
         this.bg.current.resize(innerWidth, innerHeight);
-      } else {
-        document.querySelectorAll('.Background')[0].style.height = `calc(100vh + ${diff}px)`
+      }
+      /* If we are dealing with a url bar size change ... */
+      else if (!this.canvasIsBig) {
+        /* document.querySelectorAll('.Background')[0].style.height = `calc(100vh + ${diff}px)`; */
+        this.bg.current.resize(innerWidth, innerHeight);
+        this.canvasIsBig = true;
       }
     });
   }
