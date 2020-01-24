@@ -10,6 +10,7 @@ export default class Background extends Component {
 
   /* Varible definitions */
 
+  P5;
   circles;
   WIDTH = window.innerWidth;
   HEIGHT = window.innerHeight;
@@ -42,6 +43,7 @@ export default class Background extends Component {
   /* p5js canvas functions */
 
   setup = (p5, canvasParentRef) => {
+    this.P5 = p5;
     this.PARTICLE_QUANTITY_RATIO = ((this.WIDTH / (this.options.INNER_RADIUS / 2)) *
       (this.HEIGHT / (this.options.INNER_RADIUS / 2)));
     let value = (this.PARTICLE_QUANTITY_RATIO <= 1000) ? this.PARTICLE_QUANTITY_RATIO : 1000;
@@ -115,21 +117,23 @@ export default class Background extends Component {
     this.yoff += this.options.WIND_VARIANCE;
   };
 
-  windowResized = p5 => {
-    p5.resizeCanvas(window.innerWidth, window.innerHeight);
+  resize() {
+    let innerWidth = window.innerWidth;
+    let innerHeight = window.innerHeight;
+    this.P5.resizeCanvas(innerWidth, innerHeight);
     this.physics.setWorldBounds(
       new toxi.geom.Rect(
         this.options.PARTICLE_RADIUS * -1,
         this.options.PARTICLE_RADIUS * -1,
-        this.WIDTH + (this.options.PARTICLE_RADIUS * 3),
-        this.HEIGHT + (this.options.PARTICLE_RADIUS * 3)
+        innerWidth + (this.options.PARTICLE_RADIUS * 3),
+        innerHeight + (this.options.PARTICLE_RADIUS * 3)
       )
     );
-    this.PARTICLE_QUANTITY_RATIO = ((this.WIDTH / (this.options.INNER_RADIUS / 2)) *
-      (this.HEIGHT / (this.options.INNER_RADIUS / 2)));
+    this.PARTICLE_QUANTITY_RATIO = ((innerWidth / (this.options.INNER_RADIUS / 2)) *
+      (innerHeight / (this.options.INNER_RADIUS / 2)));
     let value = (this.PARTICLE_QUANTITY_RATIO <= 1000) ? this.PARTICLE_QUANTITY_RATIO : 1000;
-    value = p5.map(value, 0, 1000, 100, 200);
-    this.options.INNER_STRENGTH = p5.map(value, 100, 250, 2, 4);
+    value = this.P5.map(value, 0, 1000, 100, 200);
+    this.options.INNER_STRENGTH = this.P5.map(value, 100, 250, 2, 4);
     this.NUM_PARTICLES = Math.floor(value);
   };
 
@@ -219,7 +223,6 @@ export default class Background extends Component {
           <Sketch
             setup={this.setup}
             draw={this.draw}
-            windowResized={this.windowResized}
           />
         </div>
       </div>

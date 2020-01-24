@@ -9,6 +9,7 @@ export default class RepulsionHandler extends Component {
     this.circles = [];
     this.DOMexpansiveBois = [];
     this.previousTime = 0;
+    this.previousHeigth = 0;
   }
 
   componentDidMount() {
@@ -27,6 +28,12 @@ export default class RepulsionHandler extends Component {
     window.addEventListener('pageChange', this.handleScroll.bind(this), {
       capture: true,
       passive: true
+    });
+    window.addEventListener('resize', (ev) => {
+      document.getElementById('diff').innerText = Math.abs(this.previousHeigth - ev.target.innerHeight);
+      console.log(Math.abs(this.previousHeigth - ev.target.innerHeight));
+      this.previousHeigth = ev.target.innerHeight;
+      this.bg.current.resize();
     });
   }
 
@@ -84,6 +91,7 @@ export default class RepulsionHandler extends Component {
   render() {
     return (
       <div className="RepulsionHandler">
+        <div id="diff" style={{ fontSize: '5rem' }}></div>
         <Background circles={this.circles} ref={this.bg} />
       </div>
     );
