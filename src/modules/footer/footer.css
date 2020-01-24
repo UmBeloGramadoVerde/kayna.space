@@ -7,9 +7,9 @@
 
 .footer-icon {
   width: 7vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-bottom: 1vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 2vh;
   fill: pink;
 }
 
@@ -22,5 +22,7 @@
 @media screen and (min-width: 1361px) {
   .footer-icon {
     width: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 }

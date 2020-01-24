@@ -22,7 +22,7 @@ export default class Home extends Component {
           real fast.
         </h4>
         <h4 className="expansive_bois">
-          Currently I live in Portugal, work in <Link to="/professional/altran">Altran</Link> and study in Universidade da Beira Interior.
+          Currently I live in Portugal, work in <Link to="/professional/altran">Altran</Link> and study Informatics in Universidade da Beira Interior.
         </h4>
         <h4 className="expansive_bois">
           I'm interested in working with unformal, artistic,

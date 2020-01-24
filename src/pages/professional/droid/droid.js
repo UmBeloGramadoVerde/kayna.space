@@ -36,8 +36,8 @@ export default class Droid extends Component {
         </h4>
         <h4 className="expansive_bois">
           Everybody worked with a lot of satisfaction and besides being really
-          tired everybody was really happy with what we had built, which was not
-          only the robot, but also the ~friendships~.
+          tired we all were really happy with what we had built. Which was not
+          only the robot, but also the ~friendships~
         </h4>
         <h4 className="expansive_bois">
           We used C and a custom framework for the SEK platform to build

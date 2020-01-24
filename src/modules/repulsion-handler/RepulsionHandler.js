@@ -30,11 +30,25 @@ export default class RepulsionHandler extends Component {
       passive: true
     });
     window.addEventListener('resize', (ev) => {
-      let diff = Math.abs(this.previousHeigth - ev.target.innerHeight);
+      let innerWidth = ev.target.innerWidth;
+      let innerHeight = ev.target.innerHeight;
+      let diff = this.previousHeigth - innerHeight;
+      let absDiff = Math.abs(diff);
       document.getElementById('diff').innerText = diff;
-      this.previousHeigth = ev.target.innerHeight;
-      if (diff !== 56) {
-        this.bg.current.resize();
+      this.previousHeigth = innerHeight;
+      if ((absDiff !== 56) && (absDiff !== 75) && (absDiff !== 76)) {
+        /* this.previousHeigth > innerHeight */
+        /* Screen got smaller */
+        /* URL bar is shown */
+        if (diff > 0) {
+          this.bg.current.resize(innerWidth + absDiff, innerHeight + absDiff);
+        }
+        /* is.previousHeigth < innerHeight */
+        /* Screen got bigger */
+        /* URL bar is hidden */
+        else if (diff < 0) {
+          this.bg.current.resize(innerWidth + absDiff, innerHeight + absDiff);
+        }
       }
     });
   }

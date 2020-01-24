@@ -117,9 +117,7 @@ export default class Background extends Component {
     this.yoff += this.options.WIND_VARIANCE;
   };
 
-  resize() {
-    let innerWidth = window.innerWidth;
-    let innerHeight = window.innerHeight;
+  resize(innerWidth, innerHeight) {
     this.P5.resizeCanvas(innerWidth, innerHeight);
     this.physics.setWorldBounds(
       new toxi.geom.Rect(
