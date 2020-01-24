@@ -30,10 +30,12 @@ export default class RepulsionHandler extends Component {
       passive: true
     });
     window.addEventListener('resize', (ev) => {
-      document.getElementById('diff').innerText = Math.abs(this.previousHeigth - ev.target.innerHeight);
-      console.log(Math.abs(this.previousHeigth - ev.target.innerHeight));
+      let diff = Math.abs(this.previousHeigth - ev.target.innerHeight);
+      document.getElementById('diff').innerText = diff;
       this.previousHeigth = ev.target.innerHeight;
-      this.bg.current.resize();
+      if (diff !== 56) {
+        this.bg.current.resize();
+      }
     });
   }
 
