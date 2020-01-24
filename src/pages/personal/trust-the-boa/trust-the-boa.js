@@ -46,11 +46,11 @@ export default class TrustTheBoa extends Component {
           </figure>
           <figure>
             <img src='/images/TTB/TTB-4.jpg' alt='Droid 4' />
-            <figcaption>Robot of the OPEN category</figcaption>
+            <figcaption>Businness card</figcaption>
           </figure>
           <figure>
             <img src='/images/TTB/TTB-5.jpg' alt='Droid 5' />
-            <figcaption>Businnes card</figcaption>
+            <figcaption>Businness card</figcaption>
           </figure>
           <figure>
             <img src='/images/TTB/TTB-6.jpg' alt='Droid 6' />
