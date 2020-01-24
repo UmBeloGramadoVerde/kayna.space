@@ -34,7 +34,6 @@ export default class RepulsionHandler extends Component {
       let innerWidth = ev.target.innerWidth;
       let innerHeight = ev.target.innerHeight;
       let diff = Math.abs(this.previousHeigth - innerHeight);
-      document.getElementById('diff').innerText = diff;
       this.previousHeigth = innerHeight;
       /* I have to map all the url bar sizes */
       /* This is a dumb implementation, there is probably a smart way of getting the size */
@@ -105,7 +104,6 @@ export default class RepulsionHandler extends Component {
   render() {
     return (
       <div className="RepulsionHandler">
-        <div id="diff" style={{ fontSize: '5rem' }}></div>
         <Background circles={this.circles} ref={this.bg} />
       </div>
     );

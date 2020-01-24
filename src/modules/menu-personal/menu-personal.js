@@ -10,7 +10,7 @@ export default class MenuPersonal extends Component {
   componentDidMount() {
     var toggle = document.querySelectorAll('.toggle-personal')[0];
     var nav = document.querySelectorAll('.menu-personal')[0];
-    var toggle_open_text = '💃🏾';
+    var toggle_open_text = '👨🏾‍🎨';
     var toggle_close_text = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 449.998 449.998" style="enable-background:new 0 0 449.998 449.998;" xml:space="preserve">
  <g>
@@ -96,7 +96,7 @@ export default class MenuPersonal extends Component {
           <Link class='disc-personal l7-personal' to='/personal/code-race'>
             <div>Code Race</div>
           </Link>
-          <a class='disc-personal last-personal toggle-personal'>💃🏾</a>
+          <a class='disc-personal last-personal toggle-personal'>👨🏾‍🎨</a>
         </nav>
       </div>
     );
