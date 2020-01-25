@@ -12,7 +12,7 @@ export default class Home extends Component {
         <h1 className="expansive_bois">Kaynã Rodrigues</h1>
         <p></p>
         <h4 className="expansive_bois">
-          This is a convenient way to sum up most of my projects. I hope this convinces you I'm cool to work with. Give me money to make cool things.
+          This is a convenient way to sum up most of my projects. I hope this convinces you I'm cool to work with.
         </h4>
         <h4 className="expansive_bois">
           I'm comfortable with back and front end (Angular, React, Node,
