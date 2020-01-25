@@ -19,14 +19,14 @@ export default class Background extends Component {
     STRENGTH: -10,
     INNER_RADIUS: 100,
     INNER_STRENGTH: 0,
-    PARTICLE_RADIUS: 10
+    PARTICLE_RADIUS: 5
   };
   PARTICLE_QUANTITY_RATIO = 0;
   PARTICLE_QUANTITY_DENSITY = 0;
   NUM_PARTICLES = 0;
 
   palette_initial = ['#28464B', '#326771', '#2C8C99', '#42D9C8'];
-  palette = ['#e64398', '#b39bc8', '#a1c3d1', '#2B4141', '#861657', '#F7B2B7', '#7F2982'];
+  palette = ['#b39bc8', '#7F2982', '#861657', '#2B4141'];
   WIND_SPEED = 2;
   WIND_VARIANCE = 0.05;
   yoff = 0;
