@@ -1,3 +1,4 @@
+@import 'src/pages/shared/variables';
 .Footer {
   margin: auto;
   text-align: center;
@@ -10,7 +11,7 @@
   padding-left: 4vw;
   padding-right: 4vw;
   padding-bottom: 2vh;
-  fill: pink;
+  fill: $main_color;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1360px) {

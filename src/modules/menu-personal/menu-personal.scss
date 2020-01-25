@@ -357,7 +357,7 @@ a {
     position: relative;
     width: 33%;
     top: 6px;
-    fill: #931621;
+    fill: $background;
   }
 }
 
@@ -395,7 +395,7 @@ a {
   line-height: 100px;
   padding: 0;
   width: 100px;
-  background: pink;
+  background: $main_color;
   opacity: 1;
   -webkit-transform: none;
   transform: none;

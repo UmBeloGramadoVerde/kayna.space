@@ -360,7 +360,7 @@ a {
     position: relative;
     width: 33%;
     top: 6px;
-    fill: #931621;
+    filter: invert(93%) sepia(2%) saturate(1637%) hue-rotate(210deg) brightness(104%) contrast(91%);
   }
 }
 

@@ -26,7 +26,7 @@ export default class Background extends Component {
   NUM_PARTICLES = 0;
 
   palette_initial = ['#28464B', '#326771', '#2C8C99', '#42D9C8'];
-  palette = ['#c0fff0', '#a8f0ff', '#c0c0ff', '#ffd8f0', '#ffffc0',];
+  palette = ['#e64398', '#b39bc8', '#a1c3d1', '#2B4141', '#861657', '#F7B2B7', '#7F2982'];
   WIND_SPEED = 2;
   WIND_VARIANCE = 0.05;
   yoff = 0;
@@ -69,7 +69,7 @@ export default class Background extends Component {
     this.setBehaviours(this.circles);
   };
   draw = p5 => {
-    p5.background(0, 0, 0);
+    p5.background('#f0ebf4');
     if (this.physics.particles.length < this.NUM_PARTICLES) {
       this.addParticle();
     } else if (this.physics.particles.length > this.NUM_PARTICLES) {
