@@ -22,13 +22,13 @@ export default class HorseWithNoName extends Component {
           this ten times better than I went in.
         </h4>
         <h4 className="expansive_bois">
-          <a href="https://horsewithnoname.online/" target="_blank">The game</a> was 
+          <a href="https://horsewithnoname.online/" target="_blank" rel="noopener noreferrer">The game</a> was
           really not that fun, to be honest. But it sure worked to
           teach me how multiplayer games work. I used p5js (the lord almighty)
           and socket.io to build this one.
         </h4>
         <h4 className="expansive_bois">
-          The name came from the music <a href="https://www.youtube.com/watch?v=zSAJ0l4OBHM" target="_blank">The horse with no name</a> by America,
+          The name came from the music <a href="https://www.youtube.com/watch?v=zSAJ0l4OBHM" target="_blank" rel="noopener noreferrer">The horse with no name</a> by America,
           because at the time I was making this, it was taking a lot of my time
           and I also had to deliver a college assignment that was about making a
           website that used multimedia content.
@@ -38,8 +38,8 @@ export default class HorseWithNoName extends Component {
           and I was able to continue working on it.
         </h4>
 
-        <h4 class="expansive_bois">
-          The game page <a href="https://horsewithnoname.online/" target="_blank" class="arrow_link">→</a>
+        <h4 className="expansive_bois">
+          <a href="https://horsewithnoname.online/" target="_blank" rel="noopener noreferrer">The game page</a>
         </h4>
       </div>
     );

@@ -27,7 +27,7 @@ import HorseWithNoName from '../../pages/personal/horse-with-no-name/horse-with-
 import TrustTheBoa from '../../pages/personal/trust-the-boa/trust-the-boa';
 
 class Navigation extends Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.unlisten = this.props.history.listen((location, action) => {
       window.dispatchEvent(new Event('pageChange'));
     });

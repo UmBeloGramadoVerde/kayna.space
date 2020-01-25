@@ -3,9 +3,6 @@ import '../../shared/styles.scss';
 import './droid.scss';
 
 export default class Droid extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -16,7 +13,7 @@ export default class Droid extends Component {
         <h1 className="expansive_bois">Droid</h1>
         <p></p>
         <h4 className="expansive_bois">
-          <a href="https://www.facebook.com/droidunb" target="_blank">Droid - UnB</a> is a robotics competition team and I was very fortunate to
+          <a href="https://www.facebook.com/droidunb" target="_blank" rel="noopener noreferrer">Droid - UnB</a> is a robotics competition team and I was very fortunate to
           be accepted to join them.
         </h4>
         <h4 className="expansive_bois">

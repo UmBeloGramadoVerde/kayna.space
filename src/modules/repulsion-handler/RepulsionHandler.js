@@ -94,7 +94,7 @@ export default class RepulsionHandler extends Component {
           element.offsetTop - window.scrollY + element.clientHeight / 2;
         this.circles[index].radius = Math.sqrt(
           Math.pow(element.clientWidth, 2) + Math.pow(element.clientHeight, 2)
-        );
+        ) * 1.1;
         this.circles[index].force = -15;
       }
       this.bg.current.update(this.circles);

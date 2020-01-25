@@ -12,12 +12,12 @@ export default class Cemab extends Component {
         <p></p>
         <h4 className="expansive_bois">
           During the mechatronics engineering studies I was able to be part of a
-          scientific initiation project on the <a href="https://www.cemab.com.br/" target="_blank">Ave Branca High School</a> (Centro de
+          scientific initiation project on the <a href="https://www.cemab.com.br/" target="_blank" rel="noopener noreferrer">Ave Branca High School</a> (Centro de
           Ensino Médio Ave Branca).
         </h4>
         <h4 className="expansive_bois">
-          The center worked with highly gifted kids (8yo-12yo). With the help 
-          of <a href="https://www.linkedin.com/in/ian-alexandre-7850b2189/" target="_blank">Ian Moura Alexandre</a> , we built the schedule for the robotics classes.
+          The center worked with highly gifted kids (8yo-12yo). With the help
+          of <a href="https://www.linkedin.com/in/ian-alexandre-7850b2189/" target="_blank" rel="noopener noreferrer">Ian Moura Alexandre</a> , we built the schedule for the robotics classes.
         </h4>
         <h4 className="expansive_bois">
           That included all the class materials, training of the teachers,
@@ -40,7 +40,7 @@ export default class Cemab extends Component {
           whatever projects we thought would be fun, and that's what we did. We
           always taught things we thought were fun and the kids LOVED IT.
         </h4>
-        
+
         <h4 className="expansive_bois">
           The following pictures are not specifically from CEMAB,
           just a few shots of the activities that I was involved with during

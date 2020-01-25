@@ -11,7 +11,7 @@ export default class Configr extends Component {
         <h1 className="expansive_bois">Configr</h1>
         <p></p>
         <h4 className="expansive_bois">
-          When working for <a href="https://configr.com/" target="_blank">Configr</a> I was able to coordinate the web
+          When working for <a href="https://configr.com/" target="_blank" rel="noopener noreferrer">Configr</a> I was able to coordinate the web
           application migration team.
         </h4>
         <h4 className="expansive_bois">
@@ -23,7 +23,7 @@ export default class Configr extends Component {
           became really good friends.
         </h4>
         <h4 className="expansive_bois">
-          Special thanks to the CTO <a href="https://www.linkedin.com/in/felipetomaz/" target="_blank">Felipe</a>, one of my best friends ever, who
+          Special thanks to the CTO <a href="https://www.linkedin.com/in/felipetomaz/" target="_blank" rel="noopener noreferrer">Felipe</a>, one of my best friends ever, who
           recently became a father (congratulations, Felipe and Lais).
         </h4>
         <h4 className="expansive_bois">

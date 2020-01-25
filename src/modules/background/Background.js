@@ -4,9 +4,6 @@ import Sketch from 'react-p5';
 const toxi = require('toxiclibsjs');
 
 export default class Background extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   /* Varible definitions */
 
@@ -16,21 +13,21 @@ export default class Background extends Component {
   HEIGHT = window.innerHeight;
   options = {
     WIND_VARIANCE: 0.01,
-    WIND_SPEED: 3,
+    WIND_SPEED: 1,
     RADIUS: 200,
     TIMESTEP: 1,
     STRENGTH: -10,
     INNER_RADIUS: 100,
     INNER_STRENGTH: 0,
-    PARTICLE_RADIUS: 15
+    PARTICLE_RADIUS: 10
   };
   PARTICLE_QUANTITY_RATIO = 0;
   PARTICLE_QUANTITY_DENSITY = 0;
   NUM_PARTICLES = 0;
 
   palette_initial = ['#28464B', '#326771', '#2C8C99', '#42D9C8'];
-  palette = ['#282960', '#4C256F', '#7D2175', '#ffc0cb', '#ffc00e',];
-  WIND_SPEED = 3;
+  palette = ['#c0fff0', '#a8f0ff', '#c0c0ff', '#ffd8f0', '#ffffc0',];
+  WIND_SPEED = 2;
   WIND_VARIANCE = 0.05;
   yoff = 0;
   physics;
@@ -59,11 +56,12 @@ export default class Background extends Component {
     );
     p5.createCanvas(this.WIDTH, this.HEIGHT).parent(canvasParentRef);
 
-    this.physics.setDrag(0.05);
+    this.physics.setDrag(0.16);
+    this.physics.setTimeStep(1);
     this.physics.setWorldBounds(
       new toxi.geom.Rect(
-        this.options.PARTICLE_RADIUS * -1,
-        this.options.PARTICLE_RADIUS * -1,
+        this.options.PARTICLE_RADIUS * -3,
+        this.options.PARTICLE_RADIUS * -3,
         this.WIDTH * 1.1,
         this.HEIGHT * 1.1
       )
@@ -71,7 +69,7 @@ export default class Background extends Component {
     this.setBehaviours(this.circles);
   };
   draw = p5 => {
-    p5.background(147, 22, 33);
+    p5.background(0, 0, 0);
     if (this.physics.particles.length < this.NUM_PARTICLES) {
       this.addParticle();
     } else if (this.physics.particles.length > this.NUM_PARTICLES) {
@@ -121,10 +119,10 @@ export default class Background extends Component {
     this.P5.resizeCanvas(innerWidth, innerHeight);
     this.physics.setWorldBounds(
       new toxi.geom.Rect(
-        this.options.PARTICLE_RADIUS * -1,
-        this.options.PARTICLE_RADIUS * -1,
-        innerWidth + (this.options.PARTICLE_RADIUS * 3),
-        innerHeight + (this.options.PARTICLE_RADIUS * 3)
+        this.options.PARTICLE_RADIUS * -3,
+        this.options.PARTICLE_RADIUS * -3,
+        innerWidth * 1.1,
+        innerHeight * 1.1
       )
     );
     this.PARTICLE_QUANTITY_RATIO = ((innerWidth / (this.options.INNER_RADIUS / 2)) *

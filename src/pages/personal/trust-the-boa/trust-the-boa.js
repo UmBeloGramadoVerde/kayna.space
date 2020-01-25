@@ -18,7 +18,7 @@ export default class TrustTheBoa extends Component {
         </h4>
         <h4 className='expansive_bois'>
           It is legitimately fun to work on this with everybody and we also give
-          1 euro out of every wallet sold to <a href="https://www.facebook.com/associacaoinstinto" target="_blank">Instinto</a>, a animal shelter in Covilhã,
+          1 euro out of every wallet sold to <a href="https://www.facebook.com/associacaoinstinto" target="_blank" rel="noopener noreferrer">Instinto</a>, a animal shelter in Covilhã,
           Portugal. We have one collection out and the prints of the second one
           are drawn and approved.
         </h4>
@@ -28,11 +28,8 @@ export default class TrustTheBoa extends Component {
           giving a prompt to an artist and letting them work however they want
           with it.
         </h4>
-        <h4 class='expansive_bois'>
-          Our store{' '}
-          <a href='https://trusttheboa.com/' target='_blank' class='arrow_link'>
-            →
-          </a>
+        <h4 className='expansive_bois'>
+          <a href='https://trusttheboa.com/' target='_blank' rel="noopener noreferrer">Our store</a>
         </h4>
 
         <div className='image-gallery'>

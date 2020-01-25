@@ -1,3 +1,4 @@
+@import 'variables';
 .content {
   padding-left: 9vw;
   padding-right: 9vw;
@@ -6,7 +7,7 @@
 
 h1,
 h4 {
-  color: pink;
+  color: $text_color;
   display: inline-block;
 }
 
@@ -20,7 +21,7 @@ h1.expansive_bois {
 h4.expansive_bois {
   clear: both !important;
   display: block;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
   width: 45vw;
 }
 
@@ -111,6 +112,42 @@ h4.expansive_bois:nth-child(even) {
 }
 
 @keyframes link {
-  from {background-position: 5px 1.15em;}
-  to {background-position: 20px 1.15em;}
+  from {background-position: 5px 1.1em;}
+  to {background-position: 20px 1.1em;}
+}
+
+figure {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+figure > img {
+  width: 100%;
+  border-radius: 2%;
+  box-shadow: 2px 2px 30px 0px rgba(0,0,0,0.5);
+}
+img ~ figcaption {
+  font-size: 5rem;
+  color: $text_color;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    & {
+      font-size: 2rem;
+    }
+  }
+}
+
+.image-gallery {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3vw;
+  width: 100%;
+  margin-bottom: 10vh;
+  @media screen and (min-width: 768px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }

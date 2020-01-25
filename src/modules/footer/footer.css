@@ -6,7 +6,7 @@
 }
 
 .footer-icon {
-  width: 7vw;
+  height: 6vw;
   padding-left: 4vw;
   padding-right: 4vw;
   padding-bottom: 2vh;
@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 600px) and (max-width: 1360px) {
   .footer-icon {
-    width: 5vw;
+    height: 4vw;
   }
 }
 

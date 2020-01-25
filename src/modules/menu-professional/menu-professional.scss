@@ -1,3 +1,4 @@
+@import 'src/pages/shared/variables';
 :root {
   --disc-number: 8;
   --size: 100px;
@@ -6,8 +7,8 @@
   width: 100px;
   height: 100px;
   position: fixed;
-  top: 0px;
-  right: 2px;
+  top: $menu_pos;
+  right: $menu_pos+2px;
   transition: top 0.7s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
 nav.menu-professional {
@@ -94,7 +95,7 @@ a {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: #282960;
+  background: $palette_color_7;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
@@ -131,7 +132,7 @@ a {
   left: calc(1 * var(--size) / (var(--disc-number) / 4));
   right: calc(1 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(1 * var(--size) / (var(--disc-number) / 4));
-  background: #372767;
+  background: $palette_color_6;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
@@ -168,7 +169,7 @@ a {
   left: calc(2 * var(--size) / (var(--disc-number) / 4));
   right: calc(2 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(2 * var(--size) / (var(--disc-number) / 4));
-  background: #372767;
+  background: $palette_color_5;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
@@ -205,7 +206,7 @@ a {
   left: calc(3 * var(--size) / (var(--disc-number) / 4));
   right: calc(3 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(3 * var(--size) / (var(--disc-number) / 4));
-  background: #4c256f;
+  background: $palette_color_4;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
@@ -242,7 +243,7 @@ a {
   left: calc(4 * var(--size) / (var(--disc-number) / 4));
   right: calc(4 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(4 * var(--size) / (var(--disc-number) / 4));
-  background: #662376;
+  background: $palette_color_3;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
@@ -279,7 +280,7 @@ a {
   left: calc(5 * var(--size) / (var(--disc-number) / 4));
   right: calc(5 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(5 * var(--size) / (var(--disc-number) / 4));
-  background: #7d2175;
+  background: $palette_color_2;
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
@@ -316,7 +317,7 @@ a {
   left: calc(6 * var(--size) / (var(--disc-number) / 4));
   right: calc(6 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(6 * var(--size) / (var(--disc-number) / 4));
-  background: #8b1a43;
+  background: $palette_color_1;
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
@@ -353,7 +354,7 @@ a {
   left: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
   right: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
   bottom: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
-  background: #ffc00e;
+  background: $highligth_color;
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s;
   font-size: 35px;
@@ -375,17 +376,17 @@ a {
 
 .open-professional .last-professional:hover {
   background: #1a1301;
-  color: #ffc00e;
+  color: $highligth_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   svg {
-    fill: #ffc00e;
+    fill: $highligth_color;
   }
 }
 
 .open-professional .last-professional:active {
   background: #806007;
-  color: #ffc00e;
+  color: $highligth_color;
 }
 
 .open-professional .last-professional.toggle-professional {
@@ -416,9 +417,9 @@ a {
 
 .toggle-professional:hover {
   background: #1a1600;
-  color: #ffc00e;
+  color: $highligth_color;
   svg {
-    fill: #ffc00e;
+    fill: $highligth_color;
   }
 }
 

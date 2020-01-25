@@ -28,8 +28,8 @@ export default class Sinatep extends Component {
           server side scripting.
         </h4>
 
-        <h4 class="expansive_bois">
-          Their page <a href="https://sinatep.com.br/" target="_blank" class="arrow_link">→</a>
+        <h4 className="expansive_bois">
+          <a href="https://sinatep.com.br/" target="_blank" rel="noopener noreferrer">Their page</a>
         </h4>
       </div>
     );

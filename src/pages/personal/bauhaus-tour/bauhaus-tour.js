@@ -18,8 +18,8 @@ export default class BauhausTour extends Component {
         </h4>
         <h4 className="expansive_bois">
           I tried to fit the assignment that I had to do with what I was
-          interested in studying. With that in mind I 
-          built <a href="https://editor.p5js.org/umbelogramadoverde/present/brN3rEw3Z" target="_blank">a cool presentation</a> about the Bauhaus history using the mapbox API, more specifically the
+          interested in studying. With that in mind I
+          built <a href="https://editor.p5js.org/umbelogramadoverde/present/brN3rEw3Z" target="_blank" rel="noopener noreferrer">a cool presentation</a> about the Bauhaus history using the mapbox API, more specifically the
           3D rendering of the maps, because it looked really dope.
         </h4>
         <h4 className="expansive_bois">
@@ -47,10 +47,10 @@ export default class BauhausTour extends Component {
           </figure>
         </div>
 
-        <h4 class="expansive_bois">
-          The website <a href="https://editor.p5js.org/umbelogramadoverde/present/brN3rEw3Z" target="_blank" class="arrow_link">→</a>
+        <h4 className="expansive_bois">
+          <a href="https://editor.p5js.org/umbelogramadoverde/present/brN3rEw3Z" target="_blank" rel="noopener noreferrer">The website</a>
           <br />
-          The code <a href="https://editor.p5js.org/umbelogramadoverde/sketches/brN3rEw3Z" target="_blank" class="arrow_link">→</a>
+          <a href="https://editor.p5js.org/umbelogramadoverde/sketches/brN3rEw3Z" target="_blank" rel="noopener noreferrer">The code</a>
         </h4>
       </div>
     );

@@ -29,8 +29,8 @@ export default class Altran extends Component {
           that I have, need or want to.
         </h4>
 
-        <h4 class="expansive_bois">
-          My departament's page <a href="https://www.altran.com/pt/pt-pt/digital/" target="_blank" class="arrow_link">→</a>
+        <h4 className="expansive_bois">
+          <a href="https://www.altran.com/pt/pt-pt/digital/" target="_blank" rel="noopener noreferrer">My departament's page</a>
         </h4>
       </div>
     );

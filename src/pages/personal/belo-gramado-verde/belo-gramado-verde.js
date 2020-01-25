@@ -15,7 +15,7 @@ export default class BeloGramadoVerde extends Component {
           but what really interests me is experimenting with everything.
         </h4>
         <h4 className="expansive_bois">
-          <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank">Um Belo Gramado Verde</a> is my Instagram page where I dump my experiments
+          <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank" rel="noopener noreferrer">Um Belo Gramado Verde</a> is my Instagram page where I dump my experiments
           and pieces from different proposals. I have made graffiti, body art,
           ink on paper and clothing.
         </h4>

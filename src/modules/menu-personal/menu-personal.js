@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 import './menu-personal.scss';
 
 export default class MenuPersonal extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     var toggle = document.querySelectorAll('.toggle-personal')[0];
     var nav = document.querySelectorAll('.menu-personal')[0];
-    var toggle_open_text = '👨🏾‍🎨';
+    var toggle_open_text = '<span role="img" aria-label="Artist Emoji">👨🏾‍🎨</span>';
     var toggle_close_text = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 449.998 449.998" style="enable-background:new 0 0 449.998 449.998;" xml:space="preserve">
  <g>
@@ -31,8 +28,8 @@ export default class MenuPersonal extends Component {
               nav.parentNode.classList.toggle('active-menu');
               document.getElementsByClassName(
                 'menu-personal-container'
-              )[0].style.right = '0px';
-            }.bind(this),
+              )[0].style.right = '15px';
+            },
             700
           );
         } else {
@@ -43,7 +40,7 @@ export default class MenuPersonal extends Component {
           setTimeout(
             function () {
               toggle.innerHTML = toggle_close_text;
-            }.bind(this),
+            },
             1000
           );
         } else {
@@ -71,32 +68,32 @@ export default class MenuPersonal extends Component {
   render() {
     return (
       <div className='menu-personal-container'>
-        <nav class='menu-personal'>
+        <nav className='menu-personal'>
           <Link
-            class='disc-personal l2-personal'
+            className='disc-personal l2-personal'
             to='/personal/belo-gramado-verde'
           >
             <div>Belo Gramado Verde</div>
           </Link>
           <Link
-            class='disc-personal l3-personal'
+            className='disc-personal l3-personal'
             to='/personal/horse-with-no-name'
           >
             <div>Horse With No Name</div>
           </Link>
-          <Link class='disc-personal l4-personal' to='/personal/trust-the-boa'>
+          <Link className='disc-personal l4-personal' to='/personal/trust-the-boa'>
             <div>Trust The Boa</div>
           </Link>
-          <Link class='disc-personal l5-personal' to='/personal/arquivo-world'>
+          <Link className='disc-personal l5-personal' to='/personal/arquivo-world'>
             <div>Arquivo World</div>
           </Link>
-          <Link class='disc-personal l6-personal' to='/personal/bauhaus-tour'>
+          <Link className='disc-personal l6-personal' to='/personal/bauhaus-tour'>
             <div>Bauhaus Tour</div>
           </Link>
-          <Link class='disc-personal l7-personal' to='/personal/code-race'>
+          <Link className='disc-personal l7-personal' to='/personal/code-race'>
             <div>Code Race</div>
           </Link>
-          <a class='disc-personal last-personal toggle-personal'>👨🏾‍🎨</a>
+          <a className='disc-personal last-personal toggle-personal'><span role="img" aria-label="Artist Emoji">👨🏾‍🎨</span></a>
         </nav>
       </div>
     );
