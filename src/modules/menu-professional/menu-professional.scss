@@ -109,7 +109,7 @@ a {
 }
 
 .open-professional .l1-professional:hover {
-  background: #1a0a07;
+  background: $dark;
   color: tomato;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -146,7 +146,7 @@ a {
 }
 
 .open-professional .l2-professional:hover {
-  background: #1a0c06;
+  background: $dark;
   color: #ff7a39;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -183,7 +183,7 @@ a {
 }
 
 .open-professional .l3-professional:hover {
-  background: #1a0f04;
+  background: $dark;
   color: #ff912b;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -220,7 +220,7 @@ a {
 }
 
 .open-professional .l4-professional:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -257,7 +257,7 @@ a {
 }
 
 .open-professional .l5-professional:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -294,7 +294,7 @@ a {
 }
 
 .open-professional .l6-professional:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -331,7 +331,7 @@ a {
 }
 
 .open-professional .l7-professional:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -375,7 +375,7 @@ a {
 }
 
 .open-professional .last-professional:hover {
-  background: #1a1301;
+  background: $dark;
   color: $highligth_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -416,7 +416,7 @@ a {
 }
 
 .toggle-professional:hover {
-  background: #1a1600;
+  background: $dark;
   color: $highligth_color;
   svg {
     fill: $highligth_color;

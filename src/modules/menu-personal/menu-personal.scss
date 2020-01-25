@@ -104,7 +104,7 @@ a {
 }
 
 .open-personal .l1-personal:hover {
-  background: #1a0a07;
+  background: $dark;
   color: tomato;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -141,7 +141,7 @@ a {
 }
 
 .open-personal .l2-personal:hover {
-  background: #1a0c06;
+  background: $dark;
   color: #ff7a39;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -178,7 +178,7 @@ a {
 }
 
 .open-personal .l3-personal:hover {
-  background: #1a0f04;
+  background: $dark;
   color: #ff912b;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -215,7 +215,7 @@ a {
 }
 
 .open-personal .l4-personal:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -252,7 +252,7 @@ a {
 }
 
 .open-personal .l5-personal:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -289,7 +289,7 @@ a {
 }
 
 .open-personal .l6-personal:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -326,7 +326,7 @@ a {
 }
 
 .open-personal .l7-personal:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -370,7 +370,7 @@ a {
 }
 
 .open-personal .last-personal:hover {
-  background: #1a1301;
+  background: $dark;
   color: $highligth_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -411,7 +411,7 @@ a {
 }
 
 .toggle-personal:hover {
-  background: #1a1600;
+  background: $dark;
   color: $highligth_color;
   svg {
     fill: $highligth_color;

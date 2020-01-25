@@ -107,7 +107,7 @@ a {
 }
 
 .open .l1:hover {
-  background: #1a0a07;
+  background: $dark;
   color: tomato;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -144,7 +144,7 @@ a {
 }
 
 .open .l2:hover {
-  background: #1a0c06;
+  background: $dark;
   color: #ff7a39;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -181,7 +181,7 @@ a {
 }
 
 .open .l3:hover {
-  background: #1a0f04;
+  background: $dark;
   color: #ff912b;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -218,7 +218,7 @@ a {
 }
 
 .open .l4:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -241,7 +241,7 @@ a {
   left: calc(4 * var(--size) / (var(--disc-number) / 4));
   right: calc(4 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(4 * var(--size) / (var(--disc-number) / 4));
-  background: $palette_color_3;
+  background: $palette_color_5;
   -webkit-transition-delay: 0.0s;
   transition-delay: 0.0s;
 }
@@ -255,7 +255,7 @@ a {
 }
 
 .open .l5:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -278,7 +278,7 @@ a {
   left: calc(5 * var(--size) / (var(--disc-number) / 4));
   right: calc(5 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(5 * var(--size) / (var(--disc-number) / 4));
-  background: $palette_color_2;
+  background: $palette_color_3;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
@@ -292,7 +292,7 @@ a {
 }
 
 .open .l6:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -329,7 +329,7 @@ a {
 }
 
 .open .l7:hover {
-  background: #1a1103;
+  background: $dark;
   color: #ffa91c;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -373,7 +373,7 @@ a {
 }
 
 .open .last:hover {
-  background: #1a1301;
+  background: $dark;
   color: $highligth_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -414,7 +414,7 @@ a {
 }
 
 .toggle:hover {
-  background: #1a1600;
+  background: $dark;
   color: $highligth_color;
   svg {
     fill: $highligth_color;
