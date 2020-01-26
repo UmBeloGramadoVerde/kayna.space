@@ -57,7 +57,7 @@ export default class Background extends Component {
     p5.createCanvas(this.WIDTH, this.HEIGHT).parent(canvasParentRef);
 
     this.physics.setDrag(0.16);
-    this.physics.setTimeStep(1);
+    this.physics.setTimeStep(0.8);
     this.physics.setWorldBounds(
       new toxi.geom.Rect(
         this.options.PARTICLE_RADIUS * -3,
@@ -70,10 +70,16 @@ export default class Background extends Component {
   };
   draw = p5 => {
     p5.background('#f0ebf4');
-    if (this.physics.particles.length < this.NUM_PARTICLES) {
-      this.addParticle();
-    } else if (this.physics.particles.length > this.NUM_PARTICLES) {
-      this.physics.particles.pop();
+    if (this.showBalls) {
+      if (this.physics.particles.length < this.NUM_PARTICLES) {
+        this.addParticle();
+      } else if (this.physics.particles.length > this.NUM_PARTICLES) {
+        this.physics.particles.pop();
+      }
+    } else {
+      if (this.physics.particles.length > 0) {
+        this.physics.particles.pop(3);
+      }
     }
     this.physics.update();
     for (var i = 0; i < this.physics.particles.length; i++) {
@@ -178,8 +184,9 @@ export default class Background extends Component {
     }
   }
 
-  update(nextProps) {
+  update(nextProps, showBalls) {
     this.setBehaviours(nextProps);
+    this.showBalls = showBalls;
   }
 
   mousePressed(ev) {

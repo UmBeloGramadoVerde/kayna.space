@@ -1,0 +1,24 @@
+@import 'src/pages/shared/variables';
+.RepulsionHandler {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+}
+
+#no_balls_button {
+  width: $menu_diameter;
+  height: $menu_diameter;
+  border-radius: $menu_diameter / 2;
+  border: none;
+  background-color: $main-color;
+  color: $background;
+  @include menu-font();
+  position: relative;
+  top: $menu_pos;
+  left: $menu_pos;
+  font-size: 25pxs;
+}

@@ -52,7 +52,7 @@ a {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  font: 25px Alegreya Sans, sans-serif;
+  @include menu-font();
   line-height: 40px;
   padding-top: 10px;
   border-radius: calc(var(--disc-number) / 2 * var(--size));

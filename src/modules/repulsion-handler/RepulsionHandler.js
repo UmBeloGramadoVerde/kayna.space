@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './RepulsionHandler.css';
+import './RepulsionHandler.scss';
 import Background from '../background/Background';
 
 export default class RepulsionHandler extends Component {
@@ -11,9 +11,11 @@ export default class RepulsionHandler extends Component {
     this.previousTime = 0;
     this.previousHeigth = 0;
     this.bigCanvasHeight = 0;
+    this.showBalls = true;
   }
 
   componentDidMount() {
+    /* Event listeners */
     window.addEventListener('scroll', this.handleScroll.bind(this), {
       capture: true,
       passive: true
@@ -26,7 +28,7 @@ export default class RepulsionHandler extends Component {
       capture: true,
       passive: true
     });
-    window.addEventListener('pageChange', this.handleScroll.bind(this), {
+    window.addEventListener('pageChange', this.handlePageChange.bind(this), {
       capture: true,
       passive: true
     });
@@ -48,26 +50,17 @@ export default class RepulsionHandler extends Component {
         this.bigCanvasHeight = innerHeight;
       }
     });
+
+    /* Initial setup for ball display */
+    this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls')
+    document.getElementById('no_balls_button').innerText = (this.showBalls) ? 'No Balls' : 'Balls';
+    this.bg.current.update(this.circles, this.showBalls);
   }
 
   handlePageChange() {
     setTimeout(() => {
-      this.circles = [];
-      this.DOMexpansiveBois = document.getElementsByClassName('expansive_bois');
-      for (let index = 0; index < this.DOMexpansiveBois.length; index++) {
-        const element = this.DOMexpansiveBois[index];
-        if (!this.circles[index]) {
-          this.circles[index] = new Object();
-        }
-        this.circles[index].x = element.offsetLeft + element.clientWidth / 2;
-        this.circles[index].y =
-          element.offsetTop - window.scrollY + element.clientHeight / 2;
-        this.circles[index].radius = Math.sqrt(
-          Math.pow(element.clientWidth, 2) + Math.pow(element.clientHeight, 2)
-        );
-        this.circles[index].force = -15;
-      }
-      this.bg.current.update(this.circles);
+      this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls');
+      this.bg.current.update(this.circles, this.showBalls);
     }, 500);
   }
 
@@ -97,13 +90,18 @@ export default class RepulsionHandler extends Component {
         ) * 1.1;
         this.circles[index].force = -15;
       }
-      this.bg.current.update(this.circles);
+      this.bg.current.update(this.circles, this.showBalls);
     }
   }
 
   render() {
     return (
       <div className="RepulsionHandler">
+        <button id="no_balls_button" onClick={() => {
+          this.showBalls = !this.showBalls;
+          document.getElementById('no_balls_button').innerText = (this.showBalls) ? 'No Balls' : 'Balls';
+          this.bg.current.update(this.circles, this.showBalls);
+        }}></button>
         <Background circles={this.circles} ref={this.bg} />
       </div>
     );
