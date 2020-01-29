@@ -7,7 +7,7 @@ export default class MenuProfessional extends Component {
   componentDidMount() {
     var toggle = document.querySelectorAll('.toggle-professional')[0];
     var nav = document.querySelectorAll('.menu-professional')[0];
-    var toggle_open_text = '<span role="img" aria-label="Artist Emoji">👨🏾‍💻</span>';
+    var toggle_open_text = '<span role="img" aria-label="Social clothes Emoji">👔</span>';
     var toggle_close_text = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 449.998 449.998" style="enable-background:new 0 0 449.998 449.998;" xml:space="preserve">
  <g>
@@ -70,37 +70,31 @@ export default class MenuProfessional extends Component {
       <div className='menu-professional-container'>
         <nav className='menu-professional'>
           <Link
-            className='disc-professional l3-professional'
+            className='disc-professional l4-professional'
             to='/professional/configr'
           >
             <div>Configr</div>
           </Link>
           <Link
-            className='disc-professional l4-professional'
+            className='disc-professional l5-professional'
             to='/professional/droid'
           >
             <div>Droid</div>
           </Link>
           <Link
-            className='disc-professional l5-professional'
+            className='disc-professional l6-professional'
             to='/professional/altran'
           >
             <div>Altran</div>
           </Link>
           <Link
-            className='disc-professional l6-professional'
+            className='disc-professional l7-professional'
             to='/professional/cemab'
           >
             <div>Cemab</div>
           </Link>
-          <Link
-            className='disc-professional l7-professional'
-            to='/professional/sinatep'
-          >
-            <div>Sinatep</div>
-          </Link>
           <a className='disc-professional last-professional toggle-professional'>
-            <span role="img" aria-label="Programmer Emoji">👨🏾‍💻</span>
+            <span role="img" aria-label="Social clothes Emoji">👔</span>
           </a>
         </nav>
       </div>

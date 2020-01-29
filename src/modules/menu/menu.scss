@@ -46,7 +46,7 @@ nav.menu {
 }
 
 a {
-  color: black;
+  color: $background;
   text-decoration: none;
 }
 
@@ -73,6 +73,7 @@ a {
 .disc div {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  color: $background;
 }
 
 .open .disc {
@@ -108,14 +109,14 @@ a {
 
 .open .l1:hover {
   background: $dark;
-  color: tomato;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open .l1:active {
-  background: #803224;
-  color: tomato;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open .l1.toggle {
@@ -145,14 +146,14 @@ a {
 
 .open .l2:hover {
   background: $dark;
-  color: #ff7a39;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open .l2:active {
-  background: #803d1d;
-  color: #ff7a39;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open .l2.toggle {
@@ -182,14 +183,14 @@ a {
 
 .open .l3:hover {
   background: $dark;
-  color: #ff912b;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open .l3:active {
-  background: #804916;
-  color: #ff912b;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open .l3.toggle {
@@ -219,14 +220,14 @@ a {
 
 .open .l4:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open .l4:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open .l4.toggle {
@@ -256,14 +257,14 @@ a {
 
 .open .l5:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open .l5:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open .l5.toggle {
@@ -293,14 +294,14 @@ a {
 
 .open .l6:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open .l6:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open .l6.toggle {
@@ -330,14 +331,14 @@ a {
 
 .open .l7:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open .l7:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open .l7.toggle {
@@ -383,7 +384,7 @@ a {
 }
 
 .open .last:active {
-  background: #806007;
+  background: $soft_color;
   color: $highligth_color;
 }
 
@@ -405,7 +406,7 @@ a {
   pointer-events: auto;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  color: #921620;
+  color: $dark_color;
 }
 
 .open .toggle {
@@ -422,7 +423,7 @@ a {
 }
 
 .toggle:active {
-  background: #806c00;
+  background: $soft_color;
   color: rgba(255, 215, 0, 0.5);
   -webkit-transform: scale(0.9);
   transform: scale(0.9);

@@ -43,7 +43,7 @@ nav.menu-personal {
 }
 
 a {
-  color: black;
+  color: $background;
   text-decoration: none;
 }
 
@@ -105,14 +105,14 @@ a {
 
 .open-personal .l1-personal:hover {
   background: $dark;
-  color: tomato;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-personal .l1-personal:active {
-  background: #803224;
-  color: tomato;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-personal .l1-personal.toggle-personal {
@@ -142,14 +142,14 @@ a {
 
 .open-personal .l2-personal:hover {
   background: $dark;
-  color: #ff7a39;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-personal .l2-personal:active {
-  background: #803d1d;
-  color: #ff7a39;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-personal .l2-personal.toggle-personal {
@@ -179,14 +179,14 @@ a {
 
 .open-personal .l3-personal:hover {
   background: $dark;
-  color: #ff912b;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-personal .l3-personal:active {
-  background: #804916;
-  color: #ff912b;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-personal .l3-personal.toggle-personal {
@@ -216,14 +216,14 @@ a {
 
 .open-personal .l4-personal:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-personal .l4-personal:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-personal .l4-personal.toggle-personal {
@@ -253,14 +253,14 @@ a {
 
 .open-personal .l5-personal:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-personal .l5-personal:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-personal .l5-personal.toggle-personal {
@@ -290,14 +290,14 @@ a {
 
 .open-personal .l6-personal:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-personal .l6-personal:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-personal .l6-personal.toggle-personal {
@@ -327,14 +327,14 @@ a {
 
 .open-personal .l7-personal:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-personal .l7-personal:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-personal .l7-personal.toggle-personal {
@@ -380,7 +380,7 @@ a {
 }
 
 .open-personal .last-personal:active {
-  background: #806007;
+  background: $soft_color;
   color: $highligth_color;
 }
 
@@ -402,7 +402,7 @@ a {
   pointer-events: auto;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  color: #921620;
+  color: $dark_color;
 }
 
 .open-personal .toggle-personal {
@@ -419,7 +419,7 @@ a {
 }
 
 .toggle-personal:active {
-  background: #806c00;
+  background: $soft_color;
   color: rgba(255, 215, 0, 0.5);
   -webkit-transform: scale(0.9);
   transform: scale(0.9);

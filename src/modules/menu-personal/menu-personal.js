@@ -7,7 +7,7 @@ export default class MenuPersonal extends Component {
   componentDidMount() {
     var toggle = document.querySelectorAll('.toggle-personal')[0];
     var nav = document.querySelectorAll('.menu-personal')[0];
-    var toggle_open_text = '<span role="img" aria-label="Artist Emoji">👨🏾‍🎨</span>';
+    var toggle_open_text = '<span role="img" aria-label="Art Emoji">🎨</span>';
     var toggle_close_text = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 449.998 449.998" style="enable-background:new 0 0 449.998 449.998;" xml:space="preserve">
  <g>
@@ -69,31 +69,22 @@ export default class MenuPersonal extends Component {
     return (
       <div className='menu-personal-container'>
         <nav className='menu-personal'>
-          <Link
-            className='disc-personal l2-personal'
-            to='/personal/belo-gramado-verde'
-          >
-            <div>Belo Gramado Verde</div>
-          </Link>
-          <Link
-            className='disc-personal l3-personal'
-            to='/personal/horse-with-no-name'
-          >
+          <Link className='disc-personal l3-personal' to='/personal/horse-with-no-name'>
             <div>Horse With No Name</div>
           </Link>
-          <Link className='disc-personal l4-personal' to='/personal/trust-the-boa'>
+          <Link className='disc-personal l4-personal' to='/personal/belo-gramado-verde'>
+            <div>Belo Gramado Verde</div>
+          </Link>
+          <Link className='disc-personal l5-personal' to='/personal/trust-the-boa'>
             <div>Trust The Boa</div>
           </Link>
-          <Link className='disc-personal l5-personal' to='/personal/arquivo-world'>
+          <Link className='disc-personal l6-personal' to='/personal/arquivo-world'>
             <div>Arquivo World</div>
-          </Link>
-          <Link className='disc-personal l6-personal' to='/personal/bauhaus-tour'>
-            <div>Bauhaus Tour</div>
           </Link>
           <Link className='disc-personal l7-personal' to='/personal/code-race'>
             <div>Code Race</div>
           </Link>
-          <a className='disc-personal last-personal toggle-personal'><span role="img" aria-label="Artist Emoji">👨🏾‍🎨</span></a>
+          <a className='disc-personal last-personal toggle-personal'><span role="img" aria-label="Art Emoji">🎨</span></a>
         </nav>
       </div>
     );

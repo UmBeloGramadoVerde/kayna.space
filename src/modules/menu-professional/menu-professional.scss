@@ -48,7 +48,7 @@ nav.menu-professional {
 }
 
 a {
-  color: black;
+  color: $background;
   text-decoration: none;
 }
 
@@ -110,14 +110,14 @@ a {
 
 .open-professional .l1-professional:hover {
   background: $dark;
-  color: tomato;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-professional .l1-professional:active {
-  background: #803224;
-  color: tomato;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-professional .l1-professional.toggle-professional {
@@ -147,14 +147,14 @@ a {
 
 .open-professional .l2-professional:hover {
   background: $dark;
-  color: #ff7a39;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-professional .l2-professional:active {
-  background: #803d1d;
-  color: #ff7a39;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-professional .l2-professional.toggle-professional {
@@ -184,14 +184,14 @@ a {
 
 .open-professional .l3-professional:hover {
   background: $dark;
-  color: #ff912b;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-professional .l3-professional:active {
-  background: #804916;
-  color: #ff912b;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-professional .l3-professional.toggle-professional {
@@ -221,14 +221,14 @@ a {
 
 .open-professional .l4-professional:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-professional .l4-professional:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-professional .l4-professional.toggle-professional {
@@ -258,14 +258,14 @@ a {
 
 .open-professional .l5-professional:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-professional .l5-professional:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-professional .l5-professional.toggle-professional {
@@ -295,14 +295,14 @@ a {
 
 .open-professional .l6-professional:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-professional .l6-professional:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-professional .l6-professional.toggle-professional {
@@ -332,14 +332,14 @@ a {
 
 .open-professional .l7-professional:hover {
   background: $dark;
-  color: #ffa91c;
+  color: $dark_color;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .open-professional .l7-professional:active {
-  background: #80550e;
-  color: #ffa91c;
+  background: $soft_color;
+  color: $dark_color;
 }
 
 .open-professional .l7-professional.toggle-professional {
@@ -385,7 +385,7 @@ a {
 }
 
 .open-professional .last-professional:active {
-  background: #806007;
+  background: $soft_color;
   color: $highligth_color;
 }
 
@@ -424,8 +424,8 @@ a {
 }
 
 .toggle-professional:active {
-  background: #806c00;
-  color: rgba(255, 215, 0, 0.5);
+  background: $soft_color;
+  color: $dark_color;
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
   -webkit-transition-duration: 0s;

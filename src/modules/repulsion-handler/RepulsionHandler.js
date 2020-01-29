@@ -12,6 +12,8 @@ export default class RepulsionHandler extends Component {
     this.previousHeigth = 0;
     this.bigCanvasHeight = 0;
     this.showBalls = true;
+    this.show_dots_text = 'Dots';
+    this.hide_dots_text = 'No Dots';
   }
 
   componentDidMount() {
@@ -53,7 +55,7 @@ export default class RepulsionHandler extends Component {
 
     /* Initial setup for ball display */
     this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls')
-    document.getElementById('no_balls_button').innerText = (this.showBalls) ? 'No Balls' : 'Balls';
+    document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
     this.bg.current.update(this.circles, this.showBalls);
   }
 
@@ -99,7 +101,7 @@ export default class RepulsionHandler extends Component {
       <div className="RepulsionHandler">
         <button id="no_balls_button" onClick={() => {
           this.showBalls = !this.showBalls;
-          document.getElementById('no_balls_button').innerText = (this.showBalls) ? 'No Balls' : 'Balls';
+          document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
           this.bg.current.update(this.circles, this.showBalls);
         }}></button>
         <Background circles={this.circles} ref={this.bg} />
