@@ -63,6 +63,7 @@ export default class RepulsionHandler extends Component {
   handlePageChange() {
     setTimeout(() => {
       this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls');
+      document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
       this.bg.current.update(this.circles, this.showBalls);
     }, 500);
   }
