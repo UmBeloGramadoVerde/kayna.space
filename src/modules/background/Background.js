@@ -35,6 +35,7 @@ export default class Background extends Component {
   mousePos;
   is_being_attracted = false;
   circleBehaviours = [];
+  particleBehaviours = [];
   randomLoc;
 
   /* p5js canvas functions */
@@ -75,10 +76,14 @@ export default class Background extends Component {
         this.addParticle();
       } else if (this.physics.particles.length > this.NUM_PARTICLES) {
         this.physics.particles.pop();
+        this.physics.removeBehavior(this.particleBehaviours[this.particleBehaviours.length - 1]);
+        this.particleBehaviours.pop();
       }
     } else {
       if (this.physics.particles.length > 0) {
-        this.physics.particles.pop(3);
+        this.physics.particles.pop();
+        this.physics.removeBehavior(this.particleBehaviours[this.particleBehaviours.length - 1]);
+        this.particleBehaviours.pop();
       }
     }
     this.physics.update();
@@ -154,6 +159,7 @@ export default class Background extends Component {
       this.options.INNER_RADIUS,
       this.options.INNER_STRENGTH
     );
+    this.particleBehaviours.push(innerAttractor)
     this.physics.addBehavior(innerAttractor);
   }
 
