@@ -128,14 +128,14 @@ export default class Background extends Component {
 
   resize(innerWidth, innerHeight) {
     this.P5.resizeCanvas(innerWidth, innerHeight);
-    this.physics.setWorldBounds(
+    /* this.physics.setWorldBounds(
       new toxi.geom.Rect(
         this.options.PARTICLE_RADIUS * -3,
         this.options.PARTICLE_RADIUS * -3,
         innerWidth * 1.1,
         innerHeight * 1.1
       )
-    );
+    ); */
     this.PARTICLE_QUANTITY_RATIO = ((innerWidth / (this.options.INNER_RADIUS / 2)) *
       (innerHeight / (this.options.INNER_RADIUS / 2)));
     let value = (this.PARTICLE_QUANTITY_RATIO <= 1000) ? this.PARTICLE_QUANTITY_RATIO : 1000;
