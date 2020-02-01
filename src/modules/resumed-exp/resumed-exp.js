@@ -9,9 +9,9 @@ export default class ResumedExp extends Component {
         return (
             <h4 className="expansive_bois">
                 <Link to={this.props.url}>{this.props.title}</Link>
-                <br boolean={this.props.title2} />
+                <p boolean={this.props.title2} style={{ margin: '0px' }} />
                 <Link to={this.props.url} boolean={this.props.title2}>{this.props.title2}</Link>
-                <br boolean={this.props.title3} />
+                <p boolean={this.props.title3} style={{ margin: '0px' }} />
                 <Link to={this.props.url} boolean={this.props.title3}>{this.props.title3}</Link>
                 <div className="description">{this.props.description}</div>
                 <div className="technologies">{this.props.technologies}</div>
