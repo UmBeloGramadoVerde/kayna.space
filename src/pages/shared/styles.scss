@@ -193,6 +193,20 @@ img ~ figcaption {
     .expansive_bois {
       align-self: center;
       width: 100%;
+      .description {
+        display: block;
+        margin-top: 10px;
+      }
+      .technologies {
+          display: block;
+          font-size: 0.7em;
+          margin-top: 10px;
+      }
+      .timespan {
+          display: block;
+          font-size: 0.7em;
+          margin-top: 10px;
+      }
     }
     .expansive_bois:nth-child(1) {
       text-align: right;
