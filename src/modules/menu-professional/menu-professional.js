@@ -71,9 +71,9 @@ export default class MenuProfessional extends Component {
         <nav className='menu-professional'>
           <Link
             className='disc-professional l4-professional'
-            to='/professional/configr'
+            to='/professional/cemab'
           >
-            <div>Configr</div>
+            <div>Cemab</div>
           </Link>
           <Link
             className='disc-professional l5-professional'
@@ -83,15 +83,15 @@ export default class MenuProfessional extends Component {
           </Link>
           <Link
             className='disc-professional l6-professional'
-            to='/professional/altran'
+            to='/professional/configr'
           >
-            <div>Altran</div>
+            <div>Configr</div>
           </Link>
           <Link
             className='disc-professional l7-professional'
-            to='/professional/cemab'
+            to='/professional/altran'
           >
-            <div>Cemab</div>
+            <div>Altran</div>
           </Link>
           <a className='disc-professional last-professional toggle-professional'>
             <span role="img" aria-label="Social clothes Emoji">👔</span>

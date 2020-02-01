@@ -69,11 +69,11 @@ export default class MenuPersonal extends Component {
     return (
       <div className='menu-personal-container'>
         <nav className='menu-personal'>
-          <Link className='disc-personal l3-personal' to='/personal/horse-with-no-name'>
-            <div>Horse With No Name</div>
-          </Link>
-          <Link className='disc-personal l4-personal' to='/personal/belo-gramado-verde'>
+          <Link className='disc-personal l3-personal' to='/personal/belo-gramado-verde'>
             <div>Belo Gramado Verde</div>
+          </Link>
+          <Link className='disc-personal l4-personal' to='/personal/horse-with-no-name'>
+            <div>Horse With No Name</div>
           </Link>
           <Link className='disc-personal l5-personal' to='/personal/trust-the-boa'>
             <div>Trust The Boa</div>

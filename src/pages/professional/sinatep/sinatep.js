@@ -27,7 +27,6 @@ export default class Sinatep extends Component {
           direction. The website was built using wordpress with custom PHP and
           server side scripting.
         </h4>
-
         <h4 className="expansive_bois">
           <a href="https://sinatep.com.br/" target="_blank" rel="noopener noreferrer">Their page</a>
         </h4>

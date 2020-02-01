@@ -3,6 +3,7 @@
   padding-left: 9vw;
   padding-right: 9vw;
   width: 80vw;
+  margin-bottom: 15vh;
 }
 
 h1,
@@ -16,27 +17,49 @@ h1.expansive_bois {
   margin-bottom: 25vh;
   width: min-content;
   /* max-width: 45vw; */
+  & ~ .timespan {
+    bottom: 25vh;
+    color: $main_color;
+    display: flex;
+    position: relative;
+    font-size: 5rem;
+  }
 }
 
 h4.expansive_bois {
-  clear: both !important;
   display: block;
-  margin-bottom: 10vh;
+  margin: 0;
   width: 45vw;
+  font-weight: 600;
 }
 
-h4.expansive_bois:nth-child(even) {
+.expansive_bois:nth-child(even) {
   text-align: right;
-  float: right;
+  margin-left: auto;
 }
 
 /* Narrow */
 @media screen and (max-width: 768px) {
+  .expansive_bois:nth-child(even) {
+    text-align: unset;
+    margin-left: unset;
+  }
   h1.expansive_bois {
     font-size: 17rem;
+    & ~ .timespan {
+      font-size: 4rem;
+    }
   }
   h4.expansive_bois {
     font-size: 4rem;
+  }
+  figure.expansive_bois {
+    margin: auto !important;
+    width: 75%;
+  }
+  h4.expansive_bois:nth-of-type(even) {
+    text-align: right;
+    margin-left: auto;
   }
 }
 
@@ -44,6 +67,9 @@ h4.expansive_bois:nth-child(even) {
 @media screen and (min-width: 769px) and (max-width: 1365px) {
   h1.expansive_bois {
     font-size: 13rem;
+    & ~ .timespan {
+      font-size: 3rem;
+    }
   }
   h4.expansive_bois {
     font-size: 3rem;
@@ -54,6 +80,9 @@ h4.expansive_bois:nth-child(even) {
 @media screen and (min-width: 1366px) and (max-width: 1920px) {
   h1.expansive_bois {
     font-size: 11rem;
+    & ~ .timespan {
+      font-size: 2.5rem;
+    }
   }
   h4.expansive_bois {
     font-size: 2.5rem;
@@ -64,6 +93,9 @@ h4.expansive_bois:nth-child(even) {
 @media screen and (min-width: 1921px) {
   h1.expansive_bois {
     font-size: 10rem;
+    & ~ .timespan {
+      font-size: 2rem;
+    }
   }
   h4.expansive_bois {
     font-size: 2rem;
@@ -117,7 +149,7 @@ h4.expansive_bois:nth-child(even) {
 
 figure {
   margin: 0;
-  width: 100%;
+  width: 66%;
   margin-bottom: 1vh;
 }
 
@@ -137,16 +169,38 @@ img ~ figcaption {
   }
 }
 
-.image-gallery {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3vw;
-  width: 100%;
-  margin-bottom: 10vh;
-  @media screen and (min-width: 768px) {
-    & {
-      grid-template-columns: 1fr 1fr;
+.other_exps {
+  .other_exps_title {
+    font-size: 5em;
+    @media screen and (max-width: 768px) {
+        font-size: 8em;
+    }
+    font-weight: 700;
+    color: $main_color;
+    display: flex;
+    margin: auto !important;
+    margin-top: 15vh !important;
+    margin-bottom: 5vh !important;
+    width: min-content;
+    height: min-content;
+    text-align: center !important;
+  }
+  .other_exps_items {
+    width: 100%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 1fr 1fr;
+    .expansive_bois {
+      align-self: center;
+      width: 100%;
+    }
+    .expansive_bois:nth-child(1) {
+      text-align: right;
+      margin: 0;
+    }
+    .expansive_bois:nth-child(2) {
+      text-align: left;
+      margin: 0;
     }
   }
 }

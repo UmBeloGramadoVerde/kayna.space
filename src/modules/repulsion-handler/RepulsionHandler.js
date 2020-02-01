@@ -68,7 +68,7 @@ export default class RepulsionHandler extends Component {
 
   handleScroll() {
     let currentTime = Date.now();
-    let timeDifferenceCutoff = 100;
+    let timeDifferenceCutoff = 75;
     /* This 75 was pure trial and error */
     /* The bigger timeDifferenceCutoff is, the bigger the lag of the div position recognition */
     /* The smaller it is, more scroll events have to be dealt with */
