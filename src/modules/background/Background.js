@@ -98,9 +98,6 @@ export default class Background extends Component {
         this.options.PARTICLE_RADIUS
       );
     }
-    this.circles.forEach(circ => {
-      //p5.ellipse(circ.x, circ.y, circ.radius, circ.radius);
-    });
 
     var xoff = 0;
     for (i = 1; i < this.physics.particles.length; i++) {
@@ -140,7 +137,7 @@ export default class Background extends Component {
       (innerHeight / (this.options.INNER_RADIUS / 2)));
     let value = (this.PARTICLE_QUANTITY_RATIO <= 1000) ? this.PARTICLE_QUANTITY_RATIO : 1000;
     value = this.P5.map(value, 0, 1000, 100, 200);
-    this.options.INNER_STRENGTH = this.P5.map(value, 100, 250, 2, 4);
+    this.options.INNER_STRENGTH = this.P5.map(value, 100, 250, -2, -4);
     this.NUM_PARTICLES = Math.floor(value);
   };
 
