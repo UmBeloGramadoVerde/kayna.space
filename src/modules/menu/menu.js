@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './menu.scss';
-import CircleType from 'circletype';
 
 export default class Menu extends Component {
 
@@ -41,17 +40,6 @@ export default class Menu extends Component {
       },
       false
     );
-
-
-
-    /* const circleType = new CircleType(document.querySelectorAll('.l1'));
-    const circleType = new CircleType(document.querySelectorAll('.l2'));
-    const circleType = new CircleType(document.querySelectorAll('.l3'));
-    const circleType = new CircleType(document.querySelectorAll('.l4'));
-    const circleType = new CircleType(document.querySelectorAll('.l5'));
-    const circleType = new CircleType(document.querySelectorAll('.l6')); */
-    /* const circleType = new CircleType(document.querySelectorAll('.l6 div')[0]); */
-    /* console.log(circleType); */
   }
   toggle_open_menu() {
     document.getElementsByClassName('menu-professional-container')[0].style.top = '15px';
