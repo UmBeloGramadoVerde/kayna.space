@@ -18,8 +18,16 @@
   color: $background;
   cursor: pointer;
   @include menu-font();
+  outline: none;
   position: relative;
   top: $menu_pos;
   left: $menu_pos;
   font-size: 25px;
+  &:hover {
+    background-color: $highligth_color;
+  }
+  &:active {
+    background-color: $soft_color;
+    transform: scale(0.9, 0.9);
+  }
 }

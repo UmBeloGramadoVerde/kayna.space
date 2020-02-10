@@ -9,7 +9,7 @@
   position: fixed;
   top: $menu_pos;
   right: $menu_pos+2px;
-  transition: top 0.7s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: top 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
 nav.menu-professional {
   display: block;
@@ -209,13 +209,13 @@ a {
   right: calc(3 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(3 * var(--size) / (var(--disc-number) / 4));
   background: $palette_color_4;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 .open-professional .l4-professional {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -246,13 +246,13 @@ a {
   right: calc(4 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(4 * var(--size) / (var(--disc-number) / 4));
   background: $palette_color_3;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .open-professional .l5-professional {
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -283,13 +283,13 @@ a {
   right: calc(5 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(5 * var(--size) / (var(--disc-number) / 4));
   background: $palette_color_2;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .open-professional .l6-professional {
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -320,13 +320,13 @@ a {
   right: calc(6 * var(--size) / (var(--disc-number) / 4));
   bottom: calc(6 * var(--size) / (var(--disc-number) / 4));
   background: $palette_color_1;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .open-professional .l7-professional {
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -357,8 +357,8 @@ a {
   right: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
   bottom: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
   background: $highligth_color;
-  -webkit-transition-delay: 0.7s;
-  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
   font-size: 35px;
   svg {
     position: relative;
@@ -369,8 +369,8 @@ a {
 }
 
 .open-professional .last-professional {
-  -webkit-transition-delay: 0.7s;
-  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;

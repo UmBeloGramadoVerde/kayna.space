@@ -26,7 +26,7 @@ export default class Menu extends Component {
         if (nav.parentNode.classList.contains('active-menu')) {
           setTimeout(function () {
             nav.parentNode.classList.toggle('active-menu');
-          }, 700);
+          }, 500);
         }
         else {
           nav.parentNode.classList.toggle('active-menu');

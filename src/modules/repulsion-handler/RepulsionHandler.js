@@ -12,6 +12,7 @@ export default class RepulsionHandler extends Component {
     this.previousHeigth = 0;
     this.bigCanvasHeight = 0;
     this.showBalls = true;
+    this.noBallsSelected = false;
     this.show_dots_text = 'Dots';
     this.hide_dots_text = 'No Dots';
   }
@@ -54,16 +55,20 @@ export default class RepulsionHandler extends Component {
     });
 
     /* Initial setup for ball display */
-    this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls')
-    document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
+    if (!this.noBallsSelected) {
+      this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls');
+      document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
+    }
     this.bg.current.update(this.circles, this.showBalls);
     this.handlePageChange();
   }
 
   handlePageChange() {
     setTimeout(() => {
-      this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls');
-      document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
+      if (!this.noBallsSelected) {
+        this.showBalls = document.querySelectorAll('.content')[0].classList.contains('show_me_the_balls');
+        document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
+      }
       this.bg.current.update(this.circles, this.showBalls);
     }, 500);
   }
@@ -103,6 +108,7 @@ export default class RepulsionHandler extends Component {
       <div className="RepulsionHandler">
         <button id="no_balls_button" onClick={() => {
           this.showBalls = !this.showBalls;
+          this.noBallsSelected = (document.getElementById('no_balls_button').innerText === this.hide_dots_text);
           document.getElementById('no_balls_button').innerText = (this.showBalls) ? this.hide_dots_text : this.show_dots_text;
           this.bg.current.update(this.circles, this.showBalls);
         }}></button>

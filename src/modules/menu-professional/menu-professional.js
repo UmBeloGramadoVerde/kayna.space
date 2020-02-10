@@ -30,7 +30,7 @@ export default class MenuProfessional extends Component {
                 'menu-professional-container'
               )[0].style.top = '15px';
             },
-            700
+            500
           );
         } else {
           nav.parentNode.classList.toggle('active-menu');
@@ -41,7 +41,7 @@ export default class MenuProfessional extends Component {
             function () {
               toggle.innerHTML = toggle_close_text;
             },
-            1100
+            500
           );
         } else {
           toggle.innerHTML = toggle_open_text;

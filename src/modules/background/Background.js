@@ -81,9 +81,18 @@ export default class Background extends Component {
       }
     } else {
       if (this.physics.particles.length > 0) {
-        this.physics.particles.pop();
-        this.physics.removeBehavior(this.particleBehaviours[this.particleBehaviours.length - 1]);
-        this.particleBehaviours.pop();
+        let speed = 3;
+        if (this.physics.particles.length > 10) {
+          for (let index = 0; index < speed; index++) {
+            this.physics.particles.pop();
+            this.physics.removeBehavior(this.particleBehaviours[this.particleBehaviours.length - 1]);
+            this.particleBehaviours.pop();
+          }
+        } else {
+          this.physics.particles.pop();
+          this.physics.removeBehavior(this.particleBehaviours[this.particleBehaviours.length - 1]);
+          this.particleBehaviours.pop();
+        }
       }
     }
     this.physics.update();

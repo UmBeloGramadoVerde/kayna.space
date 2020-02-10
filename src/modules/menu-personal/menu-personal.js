@@ -30,7 +30,7 @@ export default class MenuPersonal extends Component {
                 'menu-personal-container'
               )[0].style.right = '15px';
             },
-            700
+            500
           );
         } else {
           nav.parentNode.classList.toggle('active-menu');
@@ -41,7 +41,7 @@ export default class MenuPersonal extends Component {
             function () {
               toggle.innerHTML = toggle_close_text;
             },
-            1000
+            500
           );
         } else {
           toggle.innerHTML = toggle_open_text;
