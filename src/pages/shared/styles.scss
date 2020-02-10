@@ -14,11 +14,11 @@ h4 {
 
 h1.expansive_bois {
   margin-top: 33vh;
-  margin-bottom: 25vh;
+  margin-bottom: 15vh;
   width: min-content;
   /* max-width: 45vw; */
   & ~ .timespan {
-    bottom: 25vh;
+    bottom: 15vh;
     color: $main_color;
     display: flex;
     position: relative;

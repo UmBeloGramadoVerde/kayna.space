@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './menu.scss';
+import CircleType from 'circletype';
 
 export default class Menu extends Component {
 
@@ -40,6 +41,17 @@ export default class Menu extends Component {
       },
       false
     );
+
+
+
+    /* const circleType = new CircleType(document.querySelectorAll('.l1'));
+    const circleType = new CircleType(document.querySelectorAll('.l2'));
+    const circleType = new CircleType(document.querySelectorAll('.l3'));
+    const circleType = new CircleType(document.querySelectorAll('.l4'));
+    const circleType = new CircleType(document.querySelectorAll('.l5'));
+    const circleType = new CircleType(document.querySelectorAll('.l6')); */
+    /* const circleType = new CircleType(document.querySelectorAll('.l6 div')[0]); */
+    /* console.log(circleType); */
   }
   toggle_open_menu() {
     document.getElementsByClassName('menu-professional-container')[0].style.top = '15px';
@@ -83,13 +95,19 @@ export default class Menu extends Component {
       <div className="menu-container">
         <nav className="menu">
           <div className="disc l5">
-            <div onClick={this.toggle_open_menu_personal}>Personal</div>
+            <div onClick={this.toggle_open_menu_personal}>
+              <img src="/images/menu-text/personal-text.svg" alt="personal text" />
+            </div>
           </div>
           <div className="disc l6">
-            <div onClick={this.toggle_open_menu_professional}>Professional</div>
+            <div onClick={this.toggle_open_menu_professional}>
+              <img src="/images/menu-text/professional-text.svg" alt="professional text" />
+            </div>
           </div>
           <div className="disc l7" onClick={this.dispatchClick}>
-            <div><Link to="/home">Home</Link></div>
+            <div><Link to="/home">
+              <img src="/images/menu-text/home-text.svg" alt="home text" />
+            </Link></div>
           </div>
           <div className="disc last toggle" onClick={this.toggle_open_menu}>
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px"

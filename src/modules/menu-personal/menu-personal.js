@@ -70,19 +70,19 @@ export default class MenuPersonal extends Component {
       <div className='menu-personal-container'>
         <nav className='menu-personal'>
           <Link className='disc-personal l3-personal' to='/personal/belo-gramado-verde'>
-            <div>Belo Gramado Verde</div>
+            <div><img src="/images/menu-text/belo-gramado-verde-text.svg" alt="belo-gramado-verde text" /></div>
           </Link>
           <Link className='disc-personal l4-personal' to='/personal/horse-with-no-name'>
-            <div>Horse With No Name</div>
+            <div><img src="/images/menu-text/horse-with-no-name-text.svg" alt="horse-with-no-name text" /></div>
           </Link>
           <Link className='disc-personal l5-personal' to='/personal/trust-the-boa'>
-            <div>Trust The Boa</div>
+            <div><img src="/images/menu-text/trust-the-boa-text.svg" alt="trust-the-boa text" /></div>
           </Link>
           <Link className='disc-personal l6-personal' to='/personal/arquivo-world'>
-            <div>Arquivo World</div>
+            <div><img src="/images/menu-text/arquivo-world-text.svg" alt="arquivo-world text" /></div>
           </Link>
           <Link className='disc-personal l7-personal' to='/personal/code-race'>
-            <div>Code Race</div>
+            <div><img src="/images/menu-text/code-race-text.svg" alt="code-race text" /></div>
           </Link>
           <a className='disc-personal last-personal toggle-personal'><span role="img" aria-label="Art Emoji">🎨</span></a>
         </nav>

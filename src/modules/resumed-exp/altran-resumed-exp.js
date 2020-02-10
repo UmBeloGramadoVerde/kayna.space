@@ -10,7 +10,7 @@ export default class AltranResumedExp extends Component {
             <ResumedExp
                 url="/professional/altran"
                 title="Altran"
-                description="Development o web application"
+                description="Development of web applications"
                 technologies="Angular - React - ASP.Net"
                 timespan="Aug '19 - Present" />
         );

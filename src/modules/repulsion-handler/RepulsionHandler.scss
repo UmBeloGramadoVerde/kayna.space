@@ -16,6 +16,7 @@
   border: none;
   background-color: $main-color;
   color: $background;
+  cursor: pointer;
   @include menu-font();
   position: relative;
   top: $menu_pos;

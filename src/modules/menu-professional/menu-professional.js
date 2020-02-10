@@ -73,25 +73,25 @@ export default class MenuProfessional extends Component {
             className='disc-professional l4-professional'
             to='/professional/cemab'
           >
-            <div>Cemab</div>
+            <div><img src="/images/menu-text/cemab-text.svg" alt="cemab text" /></div>
           </Link>
           <Link
             className='disc-professional l5-professional'
             to='/professional/droid'
           >
-            <div>Droid</div>
+            <div><img src="/images/menu-text/droid-text.svg" alt="droid text" /></div>
           </Link>
           <Link
             className='disc-professional l6-professional'
             to='/professional/configr'
           >
-            <div>Configr</div>
+            <div><img src="/images/menu-text/configr-text.svg" alt="configr text" /></div>
           </Link>
           <Link
             className='disc-professional l7-professional'
             to='/professional/altran'
           >
-            <div>Altran</div>
+            <div><img src="/images/menu-text/altran-text.svg" alt="altran text" /></div>
           </Link>
           <a className='disc-professional last-professional toggle-professional'>
             <span role="img" aria-label="Social clothes Emoji">👔</span>
