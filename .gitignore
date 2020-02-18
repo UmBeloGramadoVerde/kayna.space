@@ -9,6 +9,7 @@
 /coverage
 
 # production
+# I can't run build on DO droplet - low memory
 # /build
 
 # misc
