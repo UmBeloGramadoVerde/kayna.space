@@ -1,34 +1,23 @@
-@import 'src/pages/shared/variables';
-:root {
-  --disc-number: 8;
-  --size: 100px;
-}
+@import "src/pages/shared/variables";
+$disc-number: 8;
+$size: 100px;
 .menu-professional-container {
   width: 100px;
   height: 100px;
   position: fixed;
   top: $menu_pos;
-  right: $menu_pos+2px;
+  right: $menu_pos + 2px;
   transition: top 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
 nav.menu-professional {
   display: block;
-  width: calc(var(--disc-number) * var(--size));
-  height: calc(var(--disc-number) * var(--size));
-  -webkit-transform: translate3d(
-    calc(var(--size) / (var(--disc-number))),
-    calc(-1 * var(--size) / (var(--disc-number))),
-    0
-  );
-  transform: translate3d(
-    calc(var(--size) / (var(--disc-number))),
-    calc(-1 * var(--size) / (var(--disc-number))),
-    0
-  );
+  width: $disc-number * $size;
+  height: $disc-number * $size;
+  -webkit-transform: translate3d($size / ($disc-number)), -1 * $size / ($disc-number), 0;
+  transform: translate3d($size / ($disc-number)), -1 * $size / ($disc-number), 0;
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
-  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9),
-    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
 
 nav.open-professional {
@@ -36,8 +25,8 @@ nav.open-professional {
 
 nav.menu-professional {
   position: relative;
-  bottom: calc(calc(var(--size) * (var(--disc-number) / 2)) + -62px);
-  right: calc(calc(var(--size) * (var(--disc-number) / 2)) + -38px);
+  bottom: $size * ($disc-number / 2) - ($size / 2);
+  right: $size * ($disc-number / 2) - ($size / 2);
   visibility: hidden;
   transition: visibility 0s step-end 0.7s;
 }
@@ -59,14 +48,13 @@ a {
   cursor: pointer;
   @include menu-font();
   line-height: 40px;
-  border-radius: calc(var(--disc-number) / 2 * var(--size));
+  border-radius: $disc-number / 2 * $size;
   -webkit-transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
   pointer-events: none;
   opacity: 0;
   cursor: pointer;
-  transition: opacity 0.5s,
-    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s,
     -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
@@ -130,10 +118,10 @@ a {
 /* Level 2 */
 
 .l2-professional {
-  top: calc(1 * var(--size) / (var(--disc-number) / 4));
-  left: calc(1 * var(--size) / (var(--disc-number) / 4));
-  right: calc(1 * var(--size) / (var(--disc-number) / 4));
-  bottom: calc(1 * var(--size) / (var(--disc-number) / 4));
+  top: 1 * $size / ($disc-number / 4);
+  left: 1 * $size / ($disc-number / 4);
+  right: 1 * $size / ($disc-number / 4);
+  bottom: 1 * $size / ($disc-number / 4);
   background: $palette_color_6;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
@@ -167,10 +155,10 @@ a {
 /* Level 3 */
 
 .l3-professional {
-  top: calc(2 * var(--size) / (var(--disc-number) / 4));
-  left: calc(2 * var(--size) / (var(--disc-number) / 4));
-  right: calc(2 * var(--size) / (var(--disc-number) / 4));
-  bottom: calc(2 * var(--size) / (var(--disc-number) / 4));
+  top: 2 * $size / ($disc-number / 4);
+  left: 2 * $size / ($disc-number / 4);
+  right: 2 * $size / ($disc-number / 4);
+  bottom: 2 * $size / ($disc-number / 4);
   background: $palette_color_5;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
@@ -204,10 +192,10 @@ a {
 /* Level 4 */
 
 .l4-professional {
-  top: calc(3 * var(--size) / (var(--disc-number) / 4));
-  left: calc(3 * var(--size) / (var(--disc-number) / 4));
-  right: calc(3 * var(--size) / (var(--disc-number) / 4));
-  bottom: calc(3 * var(--size) / (var(--disc-number) / 4));
+  top: 3 * $size / ($disc-number / 4);
+  left: 3 * $size / ($disc-number / 4);
+  right: 3 * $size / ($disc-number / 4);
+  bottom: 3 * $size / ($disc-number / 4);
   background: $palette_color_4;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -241,10 +229,10 @@ a {
 /* Level 5 */
 
 .l5-professional {
-  top: calc(4 * var(--size) / (var(--disc-number) / 4));
-  left: calc(4 * var(--size) / (var(--disc-number) / 4));
-  right: calc(4 * var(--size) / (var(--disc-number) / 4));
-  bottom: calc(4 * var(--size) / (var(--disc-number) / 4));
+  top: 4 * $size / ($disc-number / 4);
+  left: 4 * $size / ($disc-number / 4);
+  right: 4 * $size / ($disc-number / 4);
+  bottom: 4 * $size / ($disc-number / 4);
   background: $palette_color_3;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
@@ -278,10 +266,10 @@ a {
 /* Level 6 */
 
 .l6-professional {
-  top: calc(5 * var(--size) / (var(--disc-number) / 4));
-  left: calc(5 * var(--size) / (var(--disc-number) / 4));
-  right: calc(5 * var(--size) / (var(--disc-number) / 4));
-  bottom: calc(5 * var(--size) / (var(--disc-number) / 4));
+  top: 5 * $size / ($disc-number / 4);
+  left: 5 * $size / ($disc-number / 4);
+  right: 5 * $size / ($disc-number / 4);
+  bottom: 5 * $size / ($disc-number / 4);
   background: $palette_color_2;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
@@ -315,10 +303,10 @@ a {
 /* Level 7 */
 
 .l7-professional {
-  top: calc(6 * var(--size) / (var(--disc-number) / 4));
-  left: calc(6 * var(--size) / (var(--disc-number) / 4));
-  right: calc(6 * var(--size) / (var(--disc-number) / 4));
-  bottom: calc(6 * var(--size) / (var(--disc-number) / 4));
+  top: 6 * $size / ($disc-number / 4);
+  left: 6 * $size / ($disc-number / 4);
+  right: 6 * $size / ($disc-number / 4);
+  bottom: 6 * $size / ($disc-number / 4);
   background: $palette_color_1;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
@@ -352,10 +340,10 @@ a {
 /* Last Level */
 
 .last-professional {
-  top: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
-  left: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
-  right: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
-  bottom: calc((var(--disc-number) - 1) * var(--size) / (var(--disc-number) / 4));
+  top: ($disc-number - 1) * $size / ($disc-number / 4);
+  left: ($disc-number - 1) * $size / ($disc-number / 4);
+  right: ($disc-number - 1) * $size / ($disc-number / 4);
+  bottom: ($disc-number - 1) * $size / ($disc-number / 4);
   background: $highligth_color;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
