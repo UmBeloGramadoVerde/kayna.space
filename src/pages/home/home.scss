@@ -1,47 +1,48 @@
-@import 'src/pages/shared/variables';
+@import "src/pages/shared/variables";
 
 .exps_title {
-    font-size: 7em;
-    @media screen and (max-width: 768px) {
-        font-size: 10em;
-    }
-    font-weight: 700;
-    color: $main_color;
-    display: flex;
-    margin: auto;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    width: min-content;
-    height: min-content;
-    text-align: center;
+  font-size: 7em;
+  font-family: "Brandon Grotesque Black";
+  @media screen and (max-width: 768px) {
+    font-size: 10em;
+  }
+  font-weight: 700;
+  color: $main_color;
+  display: flex;
+  margin: auto;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  width: min-content;
+  height: min-content;
+  text-align: center;
 }
 .stagger_container {
-    height: fit-content;
-    display: grid;
-    gap: 6.66vh;
+  height: fit-content;
+  display: grid;
+  gap: 6.66vh;
 
-    .expansive_bois {
-        .description {
-            display: block;
-            margin-top: 10px;
-        }
-        .technologies {
-            display: block;
-            font-size: 0.7em;
-            margin-top: 15px;
-        }
-        .timespan {
-            display: block;
-            font-size: 0.7em;
-            margin-top: 15px;
-        }
+  .expansive_bois {
+    .description {
+      display: block;
+      margin-top: 10px;
     }
+    .technologies {
+      display: block;
+      font-size: 0.7em;
+      margin-top: 15px;
+    }
+    .timespan {
+      display: block;
+      font-size: 0.7em;
+      margin-top: 15px;
+    }
+  }
 }
 
 .exps_title ~ .stagger_container {
-    .expansive_bois {
-        a {
-            font-size: 2em;
-        }
+  .expansive_bois {
+    a {
+      font-size: 2em;
     }
+  }
 }

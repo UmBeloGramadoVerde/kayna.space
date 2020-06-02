@@ -1,4 +1,6 @@
-@import 'variables';
+@import "variables";
+@include font-config();
+
 .content {
   padding-left: 9vw;
   padding-right: 9vw;
@@ -13,6 +15,7 @@ h4 {
 }
 
 h1.expansive_bois {
+  font-family: "Brandon Grotesque Black";
   margin-top: 33vh;
   margin-bottom: 15vh;
   width: min-content;
@@ -21,8 +24,10 @@ h1.expansive_bois {
     bottom: 15vh;
     color: $main_color;
     display: flex;
-    position: relative;
     font-size: 5rem;
+    font-family: "Brandon Grotesque Medium Italic";
+    position: relative;
+    margin-left: 2rem;
   }
 }
 
@@ -45,13 +50,14 @@ h4.expansive_bois {
     margin-left: unset;
   }
   h1.expansive_bois {
-    font-size: 17rem;
+    font-size: 20rem;
+    line-height: 20rem;
     & ~ .timespan {
-      font-size: 4rem;
+      font-size: 6rem;
     }
   }
   h4.expansive_bois {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   figure.expansive_bois {
     margin: auto !important;
@@ -66,9 +72,24 @@ h4.expansive_bois {
 /* Mid */
 @media screen and (min-width: 769px) and (max-width: 1365px) {
   h1.expansive_bois {
-    font-size: 13rem;
+    font-size: 16rem;
+    line-height: 16rem;
     & ~ .timespan {
-      font-size: 3rem;
+      font-size: 5rem;
+    }
+  }
+  h4.expansive_bois {
+    font-size: 4rem;
+  }
+}
+
+/* Mid-wide */
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+  h1.expansive_bois {
+    font-size: 13rem;
+    line-height: 13rem;
+    & ~ .timespan {
+      font-size: 4rem;
     }
   }
   h4.expansive_bois {
@@ -76,25 +97,13 @@ h4.expansive_bois {
   }
 }
 
-/* Mid-wide */
-@media screen and (min-width: 1366px) and (max-width: 1920px) {
-  h1.expansive_bois {
-    font-size: 11rem;
-    & ~ .timespan {
-      font-size: 2.5rem;
-    }
-  }
-  h4.expansive_bois {
-    font-size: 2.5rem;
-  }
-}
-
 /* Wide */
 @media screen and (min-width: 1921px) {
   h1.expansive_bois {
-    font-size: 10rem;
+    font-size: 12rem;
+    line-height: 12rem;
     & ~ .timespan {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
   h4.expansive_bois {
@@ -109,7 +118,7 @@ h4.expansive_bois {
     position: relative;
     white-space: nowrap;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -120,7 +129,7 @@ h4.expansive_bois {
       background-repeat: repeat-x;
       background-size: 15px 5px;
       padding-bottom: 0.5em;
-      transition: background-position 1s linear ;
+      transition: background-position 1s linear;
       filter: invert(53%) sepia(80%) saturate(2994%) hue-rotate(216deg) brightness(101%) contrast(102%);
     }
     &:hover {
@@ -143,8 +152,12 @@ h4.expansive_bois {
 }
 
 @keyframes link {
-  from {background-position: 5px 1.1em;}
-  to {background-position: 20px 1.1em;}
+  from {
+    background-position: 5px 1.1em;
+  }
+  to {
+    background-position: 20px 1.1em;
+  }
 }
 
 figure {
@@ -156,7 +169,7 @@ figure {
 figure > img {
   width: 100%;
   border-radius: 2%;
-  box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
 }
 img ~ figcaption {
   font-size: 3.5rem;
@@ -173,7 +186,7 @@ img ~ figcaption {
   .other_exps_title {
     font-size: 5em;
     @media screen and (max-width: 768px) {
-        font-size: 8em;
+      font-size: 8em;
     }
     font-weight: 700;
     color: $main_color;
@@ -198,14 +211,14 @@ img ~ figcaption {
         margin-top: 10px;
       }
       .technologies {
-          display: block;
-          font-size: 0.7em;
-          margin-top: 10px;
+        display: block;
+        font-size: 0.7em;
+        margin-top: 10px;
       }
       .timespan {
-          display: block;
-          font-size: 0.7em;
-          margin-top: 10px;
+        display: block;
+        font-size: 0.7em;
+        margin-top: 10px;
       }
     }
     .expansive_bois:nth-child(1) {

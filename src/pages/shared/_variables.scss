@@ -1,6 +1,6 @@
 $menu_pos: 15px;
 $menu_diameter: 100px;
-$main_color: #E84398;
+$main_color: #e84398;
 $text_color: $main_color;
 $background: #f0ebf4;
 /* $palette_color_1: #861657;
@@ -10,21 +10,107 @@ $palette_color_4: #b39bc8;
 $palette_color_5: #7F2982;
 $palette_color_6: #861657;
 $palette_color_7: #b39bc8; */
-$palette_color_1: #DE3E94;
-$palette_color_2: #CB3C92;
-$palette_color_3: #BC388F;
-$palette_color_4: #AD348C;
-$palette_color_5: #9E3189;
-$palette_color_6: #8E2D85;
-$palette_color_7: #7F2982;
+$palette_color_1: #de3e94;
+$palette_color_2: #cb3c92;
+$palette_color_3: #bc388f;
+$palette_color_4: #ad348c;
+$palette_color_5: #9e3189;
+$palette_color_6: #8e2d85;
+$palette_color_7: #7f2982;
 $blue_color: #a1c3d1;
-$soft_color: #F7B2B7;
+$soft_color: #f7b2b7;
 $dark_color: rgb(68, 12, 71);
-$highligth_color: #7F7EFF;
-$dark: #7F7EFF;
+$highligth_color: #7f7eff;
+$dark: #7f7eff;
 /* '#a1c3d1',  '2B4141', '861657', 'F7B2B7', '7F2982', '7F7EFF' */
 
 @mixin menu-font() {
-    font-size: 25px;
-    font-family: inherit;
+  font-size: 25px;
+  font-family: inherit;
+}
+
+@mixin font-config() {
+  @font-face {
+    font-family: "Brandon Grotesque Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Regular"), url("./fonts/Brandon_reg.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Regular Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Regular Italic"), url("./fonts/Brandon_reg_it.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Thin";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Thin"), url("./fonts/Brandon_thin.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Thin Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Thin Italic"), url("./fonts/Brandon_thin_it.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Light"), url("./fonts/Brandon_light.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Light Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Light Italic"), url("./fonts/Brandon_light_it.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Medium"), url("./fonts/Brandon_med.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Medium Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Medium Italic"), url("./fonts/Brandon_med_it.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Bold"), url("./fonts/Brandon_bld.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Bold Italic"), url("./fonts/Brandon_bld_it.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Black";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Black"), url("./fonts/Brandon_blk.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Brandon Grotesque Black Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Brandon Grotesque Black Italic"), url("./fonts/Brandon_blk_it.woff") format("woff");
+  }
 }
