@@ -19,27 +19,24 @@ export default class Cemab extends Component {
           scientific initiation project on the <a href="https://www.cemab.com.br/" target="_blank" rel="noopener noreferrer">Ave Branca High School</a> (Centro de
                             Ensino Médio Ave Branca).
         </h4>
-          <h4 className="expansive_bois">
-            The following pictures are not specifically from CEMAB,
-            just a few shots of the activities that I was involved with during
-            my time in Edubot (program I was working on through which I met
-            the teachers that helped me get into the CEMAB program).
-        </h4>
+          <figure className="expansive_bois">
+            <img src="/images/teacher/teacher-9.jpg" alt="Droid 9" />
+            <figcaption>Introdution to arduino class</figcaption>
+          </figure>
           <h4 className="expansive_bois">
             The center worked with highly gifted kids (8yo-12yo). With the help
           of <a href="https://www.linkedin.com/in/ian-alexandre-7850b2189/" target="_blank" rel="noopener noreferrer">Ian Moura Alexandre</a> , we built the schedule for the robotics classes.
         </h4>
           <figure className="expansive_bois">
-            <img src="/images/teacher/teacher-1.jpg" alt="Droid 1" />
-            <figcaption>Edubot workshop I taught about programming with the Sparki robot</figcaption>
+            <img src="/images/teacher/teacher-12.jpg" alt="Droid 12" />
+            <figcaption>Coolest kids in town</figcaption>
           </figure>
           <h4 className="expansive_bois">
             That included all the class materials, training of the teachers,
             equipment purchase list, project code and execution.
         </h4>
           <figure className="expansive_bois">
-            <img src="/images/teacher/teacher-2.jpg" alt="Droid 2" />
-            <figcaption>Edubot workshop</figcaption>
+            <img src="/images/teacher/teacher-11.jpg" alt="Droid 8" />
           </figure>
           <h4 className="expansive_bois">
             We also went to one of the classes every week to help the professors
@@ -47,8 +44,8 @@ export default class Cemab extends Component {
             to other students of other classes.
         </h4>
           <figure className="expansive_bois">
-            <img src="/images/teacher/teacher-6.jpg" alt="Droid 6" />
-            <figcaption>Edubot workshop</figcaption>
+            <img src="/images/teacher/teacher-13.jpg" alt="Droid 8" />
+            <figcaption>Built by one of the students as the final project</figcaption>
           </figure>
           <h4 className="expansive_bois">
             Besides programming, one of the things I like the most is teaching, so
@@ -58,8 +55,8 @@ export default class Cemab extends Component {
             do that.
         </h4>
           <figure className="expansive_bois">
-            <img src="/images/teacher/teacher-7.jpg" alt="Droid 7" />
-            <figcaption>Edubot workshop</figcaption>
+            <img src="/images/teacher/teacher-14.jpg" alt="Droid 8" />
+            <figcaption>Initial meeting with the teachers</figcaption>
           </figure>
           <h4 className="expansive_bois">
             Since we were the ones that built the schedule, we could choose
@@ -71,8 +68,8 @@ export default class Cemab extends Component {
             <figcaption>My last class teaching in Impacto Guará</figcaption>
           </figure>
           <figure className="expansive_bois">
-            <img src="/images/teacher/teacher-3.jpg" alt="Droid 3" />
-            <figcaption>Soldering workshop during my time in Edubot</figcaption>
+            <img src="/images/teacher/teacher-2.jpg" alt="Droid 2" />
+            <figcaption>Edubot workshop I taught about programming with the Sparki robot</figcaption>
           </figure>
         </div>
 

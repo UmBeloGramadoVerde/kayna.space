@@ -28,7 +28,7 @@ export default class Home extends Component {
           <h4 className="expansive_bois">
             Angular, React, Node, Python, Java, .Net.
           <br />
-            I can solve problems really good and learn things really fast.
+            I can solve problems very well and learn very quickly fast.
         </h4>
           <h4 className="expansive_bois">
             Think I could help with some unorthodox, artistic or weird project you

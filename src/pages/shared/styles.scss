@@ -162,12 +162,13 @@ h4.expansive_bois {
 
 figure {
   margin: 0;
-  width: 66%;
+  width: fit-content;
   margin-bottom: 1vh;
 }
 
 figure > img {
-  width: 100%;
+  max-width: 66vw;
+  max-height: 80vh;
   border-radius: 2%;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
 }

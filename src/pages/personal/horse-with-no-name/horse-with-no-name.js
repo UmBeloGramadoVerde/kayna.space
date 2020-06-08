@@ -25,18 +25,30 @@ export default class HorseWithNoName extends Component {
             using websockets. Just like the other personal projects, I came out of
             this ten times better than I went in.
         </h4>
+        <figure className='expansive_bois'>
+            <img src='/images/horse-with-no-name/horse-with-no-name-1.png' alt='Horse With No Name 1' />
+            <figcaption>Game running on desktop</figcaption>
+          </figure>
           <h4 className="expansive_bois">
             <a href="https://horsewithnoname.online/" target="_blank" rel="noopener noreferrer">The game</a> was
             really not that fun, to be honest. But it sure worked to
             teach me how multiplayer games work. I used p5js (the lord almighty)
             and socket.io to build this one.
         </h4>
+        <figure className='expansive_bois'>
+            <img src='/images/horse-with-no-name/horse-with-no-name-3.png' alt='Horse With No Name 3' />
+            <figcaption>Game running on mobile</figcaption>
+          </figure>
           <h4 className="expansive_bois">
             The name came from the music <a href="https://www.youtube.com/watch?v=zSAJ0l4OBHM" target="_blank" rel="noopener noreferrer">The horse with no name</a> by America,
             because at the time I was making this, it was taking a lot of my time
             and I also had to deliver a college assignment that was about making a
             website that used multimedia content.
         </h4>
+        <figure className='expansive_bois'>
+            <img src='/images/horse-with-no-name/horse-with-no-name-4.png' alt='Horse With No Name 4' />
+            <figcaption>Hunter capturing another player</figcaption>
+          </figure>
           <h4 className="expansive_bois">
             So I just put this song in so the professor wouldn't zero out my work
             and I was able to continue working on it.

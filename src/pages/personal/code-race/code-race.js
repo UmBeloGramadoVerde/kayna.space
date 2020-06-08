@@ -54,7 +54,7 @@ export default class CodeRace extends Component {
             In this project, I was responsible for the backend in Java with
             Spring Boot, it was a big challenge because I had never used Java
             before, besides a few Processing sketches. But I got the hang of it
-            real quick and our app ended up doing everything that was proposed.
+            very quickly and our app ended up doing everything that was proposed.
         </h4>
           <figure className="expansive_bois">
             <img src="/images/code-race/code-race-4.jpg" alt="Code Race 4" />
