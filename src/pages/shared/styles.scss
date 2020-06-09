@@ -1,5 +1,5 @@
 @import "variables";
-@include font-config();
+/* @include font-config(); */
 
 .content {
   padding-left: 9vw;
@@ -15,7 +15,7 @@ h4 {
 }
 
 h1.expansive_bois {
-  font-family: "Brandon Grotesque Black";
+  /* font-family: "Brandon Grotesque Black"; */
   margin-top: 33vh;
   margin-bottom: 15vh;
   width: min-content;
@@ -25,9 +25,9 @@ h1.expansive_bois {
     color: $main_color;
     display: flex;
     font-size: 5rem;
-    font-family: "Brandon Grotesque Medium Italic";
+    /* font-family: "Brandon Grotesque Medium Italic"; */
     position: relative;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 }
 
@@ -50,14 +50,17 @@ h4.expansive_bois {
     margin-left: unset;
   }
   h1.expansive_bois {
-    font-size: 20rem;
-    line-height: 20rem;
+    font-size: 17rem;
+    /* font-size: 20rem;
+    line-height: 20rem; */
     & ~ .timespan {
-      font-size: 6rem;
+      font-size: 4rem;
+      /* font-size: 6rem; */
     }
   }
   h4.expansive_bois {
-    font-size: 5rem;
+    font-size: 4rem;
+    /* font-size: 5rem; */
   }
   figure.expansive_bois {
     margin: auto !important;
@@ -72,38 +75,46 @@ h4.expansive_bois {
 /* Mid */
 @media screen and (min-width: 769px) and (max-width: 1365px) {
   h1.expansive_bois {
-    font-size: 16rem;
-    line-height: 16rem;
+    font-size: 13rem;
+    /* font-size: 16rem;
+    line-height: 16rem; */
     & ~ .timespan {
-      font-size: 5rem;
+      font-size: 3rem;
+      /* font-size: 5rem; */
     }
   }
   h4.expansive_bois {
-    font-size: 4rem;
+    font-size: 3rem;
+    /* font-size: 4rem; */
   }
 }
 
 /* Mid-wide */
 @media screen and (min-width: 1366px) and (max-width: 1920px) {
   h1.expansive_bois {
-    font-size: 13rem;
-    line-height: 13rem;
+    font-size: 11rem;
+    /* font-size: 13rem;
+    line-height: 13rem; */
     & ~ .timespan {
-      font-size: 4rem;
+      font-size: 2.5rem;
+      /* font-size: 4rem; */
     }
   }
   h4.expansive_bois {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    /* font-size: 3rem; */
   }
 }
 
 /* Wide */
 @media screen and (min-width: 1921px) {
   h1.expansive_bois {
-    font-size: 12rem;
-    line-height: 12rem;
+    font-size: 10rem;
+    /* font-size: 12rem;
+    line-height: 12rem; */
     & ~ .timespan {
-      font-size: 3rem;
+      font-size: 2rem;
+      /* font-size: 3rem; */
     }
   }
   h4.expansive_bois {
