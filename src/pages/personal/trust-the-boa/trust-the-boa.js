@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import ArquivoWorldResumedExp from '../../../modules/resumed-exp/arquivo-world-resumed-exp';
+import GramadinhoVerdaoResumedExp from '../../../modules/resumed-exp/gramadinho-verdao-resumed-exp';
 import HorseWithNoNameResumedExp from '../../../modules/resumed-exp/horse-with-no-name-resumed-exp';
 
 export default class TrustTheBoa extends Component {
@@ -63,7 +63,7 @@ export default class TrustTheBoa extends Component {
             </div>
           <div className="other_exps_items">
             <HorseWithNoNameResumedExp />
-            <ArquivoWorldResumedExp />
+            <GramadinhoVerdaoResumedExp />
           </div>
         </div>
 

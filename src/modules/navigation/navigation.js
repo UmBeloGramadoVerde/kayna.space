@@ -25,6 +25,7 @@ import BeloGramadoVerde from '../../pages/personal/belo-gramado-verde/belo-grama
 import CodeRace from '../../pages/personal/code-race/code-race';
 import HorseWithNoName from '../../pages/personal/horse-with-no-name/horse-with-no-name';
 import TrustTheBoa from '../../pages/personal/trust-the-boa/trust-the-boa';
+import GramadinhoVerdao from '../../pages/personal/gramadinho-verdao/gramadinho-verdao';
 
 class Navigation extends Component {
   UNSAFE_componentWillMount() {
@@ -85,6 +86,9 @@ class Navigation extends Component {
           </Route>
           <Route path="/personal/trust-the-boa">
             <TrustTheBoa />
+          </Route>
+          <Route path="/personal/gramadinho-verdao">
+            <GramadinhoVerdao />
           </Route>
 
           <Route path="/">
