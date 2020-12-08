@@ -72,14 +72,6 @@ export default class Droid extends Component {
             <img src="/images/droid/droid-9.jpg" alt="Droid 9" />
             <figcaption>The need for testing space was big</figcaption>
           </figure>
-          <figure className="expansive_bois">
-            <img src="/images/droid/droid-8.jpg" alt="Droid 8" />
-            <figcaption>Lazyboy Abdullah</figcaption>
-          </figure>
-          <figure className="expansive_bois">
-            <img src="/images/droid/droid-7.jpg" alt="Droid 7" />
-            <figcaption>Focused on the mission</figcaption>
-          </figure>
         </div>
 
         <div className="other_exps">

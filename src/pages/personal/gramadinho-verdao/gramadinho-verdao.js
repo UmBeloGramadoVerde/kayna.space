@@ -15,8 +15,8 @@ export default class GramadinhoVerdao extends Component {
         <p></p>
         <div className="stagger_container">
           <h4 className="expansive_bois">
-            In order to improve my teaching skills while stuck at home I decided to start
-            streaming on twitch programming classes with my friends and the dev log for my
+            In order to improve my teaching skills while stuck at home I decided to start <a href="https://www.twitch.tv/gramadinhoverdao" target="_blank" rel="noopener noreferrer">streaming on Twitch</a> programming 
+            classes with my friends and the dev log for my
             VR installation project.
         </h4>
           <h4 className="expansive_bois">
@@ -25,25 +25,22 @@ export default class GramadinhoVerdao extends Component {
             before the stream.
         </h4>
           <h4 className="expansive_bois">
-            <a href="https://www.instagram.com/umbelogramadoverde/" target="_blank" rel="noopener noreferrer">Um Belo Gramado Verde</a> is my Instagram page where I dump my experiments
-          and pieces from different proposals. I have made graffiti, body art,
-          ink on paper and clothing.
-        </h4>
-          <h4 className="expansive_bois">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ndQF8m4tFQU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </h4>
           <h4 className="expansive_bois">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3l98iGOYiNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </h4>
           <h4 className="expansive_bois">
+            The dev log streams are meant to improve my ability to handle an audience
+            and think on my feet when the situation doesn't go as planned.
+        </h4>
+          <h4 className="expansive_bois">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BFrZpgPLmr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </h4>
-
-
-          <figure className="expansive_bois">
-            <img src="/images/calligraphy/calligraphy-02.jpg" alt="Droid 2" />
-            <figcaption>Ink and Paper</figcaption>
-          </figure>
+          <h4 className="expansive_bois">
+            The teaching sessions aim to get me back on planning and executing a class
+            plan. The class subjects until now include Javascript, Arduino and Unity.
+        </h4>
         </div>
 
         <div className="other_exps">

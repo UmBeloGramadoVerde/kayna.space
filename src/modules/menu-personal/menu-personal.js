@@ -72,8 +72,8 @@ export default class MenuPersonal extends Component {
           <Link className='disc-personal l3-personal' to='/personal/belo-gramado-verde'>
             <div><img src="/images/menu-text/belo-gramado-verde-text.svg" alt="belo-gramado-verde text" /></div>
           </Link>
-          <Link className='disc-personal l4-personal' to='/personal/horse-with-no-name'>
-            <div><img src="/images/menu-text/horse-with-no-name-text.svg" alt="horse-with-no-name text" /></div>
+          <Link className='disc-personal l4-personal' to='/personal/maiden-vs-watcher'>
+            <div><img src="/images/menu-text/maiden-vs-watcher-text.svg" alt="maiden-vs-watcher text" /></div>
           </Link>
           <Link className='disc-personal l5-personal' to='/personal/trust-the-boa'>
             <div><img src="/images/menu-text/trust-the-boa-text.svg" alt="trust-the-boa text" /></div>

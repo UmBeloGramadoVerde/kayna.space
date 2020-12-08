@@ -16,25 +16,24 @@ export default class Cemab extends Component {
         <div className="stagger_container">
           <h4 className="expansive_bois">
             During the mechatronics engineering studies I was able to be part of a
-          scientific initiation project on the <a href="https://www.cemab.com.br/" target="_blank" rel="noopener noreferrer">Ave Branca High School</a> (Centro de
-                            Ensino Médio Ave Branca).
+            scientific initiation project on the <a href="https://www.cemab.com.br/" target="_blank" rel="noopener noreferrer">Ave Branca High School</a> (Centro de
+            Ensino Médio Ave Branca).
         </h4>
           <figure className="expansive_bois">
             <img src="/images/teacher/teacher-9.jpg" alt="Droid 9" />
-            <figcaption>Introdution to arduino class</figcaption>
+            <figcaption>Arduino introdution class</figcaption>
           </figure>
           <h4 className="expansive_bois">
             The center worked with highly gifted kids (8yo-12yo). With the help
           of <a href="https://www.linkedin.com/in/ian-alexandre-7850b2189/" target="_blank" rel="noopener noreferrer">Ian Moura Alexandre</a> , we built the schedule for the robotics classes.
         </h4>
-          <figure className="expansive_bois">
-            <img src="/images/teacher/teacher-12.jpg" alt="Droid 12" />
-            <figcaption>Coolest kids in town</figcaption>
-          </figure>
           <h4 className="expansive_bois">
             That included all the class materials, training of the teachers,
             equipment purchase list, project code and execution.
         </h4>
+          <figure className="expansive_bois">
+            <img src="/images/teacher/teacher-12.jpg" alt="Droid 12" />
+          </figure>
           <figure className="expansive_bois">
             <img src="/images/teacher/teacher-11.jpg" alt="Droid 8" />
           </figure>
@@ -45,7 +44,7 @@ export default class Cemab extends Component {
         </h4>
           <figure className="expansive_bois">
             <img src="/images/teacher/teacher-13.jpg" alt="Droid 8" />
-            <figcaption>Built by one of the students as the final project</figcaption>
+            <figcaption>Student's final project</figcaption>
           </figure>
           <h4 className="expansive_bois">
             Besides programming, one of the things I like the most is teaching, so
@@ -69,7 +68,7 @@ export default class Cemab extends Component {
           </figure>
           <figure className="expansive_bois">
             <img src="/images/teacher/teacher-2.jpg" alt="Droid 2" />
-            <figcaption>Edubot workshop I taught about programming with the Sparki robot</figcaption>
+            <figcaption>Edubot workshop I taught about coding for the Sparki bot</figcaption>
           </figure>
         </div>
 

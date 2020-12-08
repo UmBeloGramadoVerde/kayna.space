@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import AltranResumedExp from '../../modules/resumed-exp/altran-resumed-exp';
 import ArquivoWorldResumedExp from '../../modules/resumed-exp/arquivo-world-resumed-exp';
+import GramadinhoVerdaoResumedExp from '../../modules/resumed-exp/gramadinho-verdao-resumed-exp';
+import MaidenVsWatcherResumedExp from '../../modules/resumed-exp/maiden-vs-watcher-resumed-exp';
 import BeloGramadoVerdeResumedExp from '../../modules/resumed-exp/belo-gramado-verde-resumed-exp';
 import CemabResumedExp from '../../modules/resumed-exp/cemab-resumed-exp';
 import CodeRaceResumedExp from '../../modules/resumed-exp/code-race-resumed-exp';
@@ -58,10 +60,10 @@ export default class Home extends Component {
 
 
         <div className="stagger_container">
+          <GramadinhoVerdaoResumedExp />
+          <MaidenVsWatcherResumedExp />
           <CodeRaceResumedExp />
-          <ArquivoWorldResumedExp />
           <TrustTheBoaResumedExp />
-          <HorseWithNoNameResumedExp />
           <BeloGramadoVerdeResumedExp />
         </div>
       </div>

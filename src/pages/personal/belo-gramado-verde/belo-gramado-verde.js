@@ -26,67 +26,51 @@ export default class BeloGramadoVerde extends Component {
 
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-07.jpg" alt="Droid 7" />
-            <figcaption>The Golden Warrior</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-05.jpg" alt="Droid 5" />
-            <figcaption>Adaptation #4</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-03.jpg" alt="Droid 3" />
-            <figcaption>Graffiti</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-08.jpg" alt="Droid 8" />
-            <figcaption>Clothing</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-06.jpg" alt="Droid 6" />
-            <figcaption>Ink and Paper</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-11.jpg" alt="Droid 11" />
-            <figcaption>Adaptation #4</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-01.jpg" alt="Droid 1" />
-            <figcaption>The Golden Warrior</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-3.jpg" alt="Droid 3" />
-            <figcaption>Clothing</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-5.jpg" alt="Droid 5" />
-            <figcaption>Adaptation #4</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-04.jpg" alt="Droid 4" />
-            <figcaption>The Golden Warrior</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-02.jpg" alt="Droid 2" />
-            <figcaption>Ink and Paper</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-7.jpg" alt="Droid 7" />
-            <figcaption>Adaptation #4</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-09.jpg" alt="Droid 9" />
-            <figcaption>Love Letter to Life</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-10.jpg" alt="Droid 10" />
-            <figcaption>Graffiti</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-12.jpg" alt="Droid 12" />
-            <figcaption>Ink and Paper</figcaption>
           </figure>
           <figure className="expansive_bois">
             <img src="/images/calligraphy/calligraphy-13.jpg" alt="Droid 13" />
-            <figcaption>Adaptation #4</figcaption>
           </figure>
         </div>
 
