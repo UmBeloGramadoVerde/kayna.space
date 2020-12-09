@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import HorseWithNoNameResumedExp from '../../../modules/resumed-exp/horse-with-no-name-resumed-exp';
-import CodeRaceResumedExp from '../../../modules/resumed-exp/code-race-resumed-exp';
+import GramadinhoVerdaoResumedExp from '../../../modules/resumed-exp/gramadinho-verdao-resumed-exp';
+import TrustTheBoaResumedExp from '../../../modules/resumed-exp/trust-the-boa-resumed-exp';
 
 export default class BeloGramadoVerde extends Component {
   componentDidMount() {
@@ -79,8 +79,8 @@ export default class BeloGramadoVerde extends Component {
             Other experiences
             </div>
           <div className="other_exps_items">
-            <CodeRaceResumedExp />
-            <HorseWithNoNameResumedExp />
+            <GramadinhoVerdaoResumedExp />
+            <TrustTheBoaResumedExp />
           </div>
         </div>
 

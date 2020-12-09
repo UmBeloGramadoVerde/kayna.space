@@ -49,8 +49,8 @@ export default class Home extends Component {
         <div className="stagger_container">
           <AltranResumedExp />
           <ConfigrResumedExp />
-          <DroidResumedExp />
           <CemabResumedExp />
+          <DroidResumedExp />
         </div>
 
 

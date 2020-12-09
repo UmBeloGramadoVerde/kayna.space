@@ -72,17 +72,17 @@ export default class MenuPersonal extends Component {
           <Link className='disc-personal l3-personal' to='/personal/belo-gramado-verde'>
             <div><img src="/images/menu-text/belo-gramado-verde-text.svg" alt="belo-gramado-verde text" /></div>
           </Link>
-          <Link className='disc-personal l4-personal' to='/personal/maiden-vs-watcher'>
-            <div><img src="/images/menu-text/maiden-vs-watcher-text.svg" alt="maiden-vs-watcher text" /></div>
-          </Link>
-          <Link className='disc-personal l5-personal' to='/personal/trust-the-boa'>
+          <Link className='disc-personal l4-personal' to='/personal/trust-the-boa'>
             <div><img src="/images/menu-text/trust-the-boa-text.svg" alt="trust-the-boa text" /></div>
           </Link>
-          <Link className='disc-personal l6-personal' to='/personal/gramadinho-verdao'>
-            <div><img src="/images/menu-text/gramadinho-verdao-text.svg" alt="gramadinho-verdao text" /></div>
-          </Link>
-          <Link className='disc-personal l7-personal' to='/personal/code-race'>
+          <Link className='disc-personal l5-personal' to='/personal/code-race'>
             <div><img src="/images/menu-text/code-race-text.svg" alt="code-race text" /></div>
+          </Link>
+          <Link className='disc-personal l6-personal' to='/personal/maiden-vs-watcher'>
+            <div><img src="/images/menu-text/maiden-vs-watcher-text.svg" alt="maiden-vs-watcher text" /></div>
+          </Link>
+          <Link className='disc-personal l7-personal' to='/personal/gramadinho-verdao'>
+            <div><img src="/images/menu-text/gramadinho-verdao-text.svg" alt="gramadinho-verdao text" /></div>
           </Link>
           <a className='disc-personal last-personal toggle-personal'><span role="img" aria-label="Art Emoji">🎨</span></a>
         </nav>

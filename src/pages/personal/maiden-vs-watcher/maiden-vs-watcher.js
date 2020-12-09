@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import TrustTheBoaResumedExp from '../../../modules/resumed-exp/trust-the-boa-resumed-exp';
+import GramadinhoVerdaoResumedExp from '../../../modules/resumed-exp/gramadinho-verdao-resumed-exp';
 import CodeRaceResumedExp from '../../../modules/resumed-exp/code-race-resumed-exp';
 
 export default class MaidenVsWatcher extends Component {
@@ -46,7 +46,7 @@ export default class MaidenVsWatcher extends Component {
             </div>
           <div className="other_exps_items">
             <CodeRaceResumedExp />
-            <TrustTheBoaResumedExp />
+            <GramadinhoVerdaoResumedExp />
           </div>
         </div>
 

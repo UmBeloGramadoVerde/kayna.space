@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import TrustTheBoaResumedExp from '../../../modules/resumed-exp/trust-the-boa-resumed-exp';
-import CodeRaceResumedExp from '../../../modules/resumed-exp/code-race-resumed-exp';
+import BeloGramadoVerdeResumedExp from '../../../modules/resumed-exp/belo-gramado-verde-resumed-exp';
+import MaidenVsWatcherResumedExp from '../../../modules/resumed-exp/maiden-vs-watcher-resumed-exp';
 
 export default class GramadinhoVerdao extends Component {
   componentDidMount() {
@@ -42,8 +42,8 @@ export default class GramadinhoVerdao extends Component {
             Other experiences
             </div>
           <div className="other_exps_items">
-            <CodeRaceResumedExp />
-            <TrustTheBoaResumedExp />
+            <MaidenVsWatcherResumedExp />
+            <BeloGramadoVerdeResumedExp />
           </div>
         </div>
 

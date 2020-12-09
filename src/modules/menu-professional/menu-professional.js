@@ -71,15 +71,15 @@ export default class MenuProfessional extends Component {
         <nav className='menu-professional'>
           <Link
             className='disc-professional l4-professional'
-            to='/professional/cemab'
-          >
-            <div><img src="/images/menu-text/cemab-text.svg" alt="cemab text" /></div>
-          </Link>
-          <Link
-            className='disc-professional l5-professional'
             to='/professional/droid'
           >
             <div><img src="/images/menu-text/droid-text.svg" alt="droid text" /></div>
+          </Link>
+          <Link
+            className='disc-professional l5-professional'
+            to='/professional/cemab'
+          >
+            <div><img src="/images/menu-text/cemab-text.svg" alt="cemab text" /></div>
           </Link>
           <Link
             className='disc-professional l6-professional'

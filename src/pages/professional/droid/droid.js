@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
 import './droid.scss';
-import ConfigrResumedExp from '../../../modules/resumed-exp/configr-resumed-exp';
+import AltranResumedExp from '../../../modules/resumed-exp/altran-resumed-exp';
 import CemabResumedExp from '../../../modules/resumed-exp/cemab-resumed-exp';
 
 export default class Droid extends Component {
@@ -79,8 +79,8 @@ export default class Droid extends Component {
             Other experiences
             </div>
           <div className="other_exps_items">
+            <AltranResumedExp />
             <CemabResumedExp />
-            <ConfigrResumedExp />
           </div>
         </div>
 

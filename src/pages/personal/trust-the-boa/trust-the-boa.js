@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import GramadinhoVerdaoResumedExp from '../../../modules/resumed-exp/gramadinho-verdao-resumed-exp';
-import HorseWithNoNameResumedExp from '../../../modules/resumed-exp/horse-with-no-name-resumed-exp';
+import BeloGramadoVerdeResumedExp from '../../../modules/resumed-exp/belo-gramado-verde-resumed-exp';
+import CodeRaceResumedExp from '../../../modules/resumed-exp/code-race-resumed-exp';
 
 export default class TrustTheBoa extends Component {
   componentDidMount() {
@@ -63,8 +63,8 @@ export default class TrustTheBoa extends Component {
             Other experiences
             </div>
           <div className="other_exps_items">
-            <HorseWithNoNameResumedExp />
-            <GramadinhoVerdaoResumedExp />
+            <BeloGramadoVerdeResumedExp />
+            <CodeRaceResumedExp />
           </div>
         </div>
 

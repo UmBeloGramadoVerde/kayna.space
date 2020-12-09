@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import BeloGramadoVerdeResumedExp from '../../../modules/resumed-exp/belo-gramado-verde-resumed-exp';
-import ArquivoWorldResumedExp from '../../../modules/resumed-exp/arquivo-world-resumed-exp';
+import TrustTheBoaResumedExp from '../../../modules/resumed-exp/maiden-vs-watcher-resumed-exp';
+import MaidenVsWatcherResumedExp from '../../../modules/resumed-exp/maiden-vs-watcher-resumed-exp';
 
 export default class CodeRace extends Component {
   componentDidMount() {
@@ -72,8 +72,8 @@ export default class CodeRace extends Component {
             Other experiences
             </div>
           <div className="other_exps_items">
-            <ArquivoWorldResumedExp />
-            <BeloGramadoVerdeResumedExp />
+            <TrustTheBoaResumedExp />
+            <MaidenVsWatcherResumedExp />
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
 import AltranResumedExp from '../../../modules/resumed-exp/altran-resumed-exp';
-import DroidResumedExp from '../../../modules/resumed-exp/droid-resumed-exp';
+import CemabResumedExp from '../../../modules/resumed-exp/cemab-resumed-exp';
 
 export default class Configr extends Component {
   componentDidMount() {
@@ -50,7 +50,7 @@ export default class Configr extends Component {
             Other experiences
             </div>
           <div className="other_exps_items">
-            <DroidResumedExp />
+            <CemabResumedExp />
             <AltranResumedExp />
           </div>
         </div>
