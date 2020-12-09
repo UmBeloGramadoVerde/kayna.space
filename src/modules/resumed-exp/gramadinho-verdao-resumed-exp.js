@@ -8,7 +8,7 @@ export default class GramadinhoVerdaoResumedExp extends Component {
     render() {
         return (
             <ResumedExp
-                url="/personal/gramdinho-verdao"
+                url="/personal/gramadinho-verdao"
                 title="Gramadinho"
                 title2="Verdao"
                 description="Educational twitch streams"
