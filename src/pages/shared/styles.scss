@@ -18,8 +18,8 @@ h1.expansive_bois {
   /* font-family: "Brandon Grotesque Black"; */
   margin-top: 33vh;
   margin-bottom: 15vh;
-  width: min-content;
-  /* max-width: 45vw; */
+  width: fit-content;
+  max-width: 100%;
   & ~ .timespan {
     bottom: 15vh;
     color: $main_color;
@@ -64,11 +64,19 @@ h4.expansive_bois {
   }
   figure.expansive_bois {
     margin: auto !important;
-    width: 75%;
+    /* width: 75%; */
+    img {
+      display: flex;
+      justify-content: center;
+    }
   }
   h4.expansive_bois:nth-of-type(even) {
     text-align: right;
     margin-left: auto;
+  }
+  .yt-video {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -175,6 +183,11 @@ figure {
   margin: 0;
   width: fit-content;
   margin-bottom: 1vh;
+}
+
+.yt-video {
+  border-radius: 2%;
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 figure > img {
