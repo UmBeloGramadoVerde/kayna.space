@@ -39,7 +39,7 @@ export default class Droid extends Component {
         </h4>
           <figure className="expansive_bois">
             <img src="/images/droid/droid-4.jpg" alt="Droid 4" />
-            <figcaption>Robot of the OPEN category</figcaption>
+            <figcaption>Robot for the OPEN category</figcaption>
           </figure>
           <h4 className="expansive_bois">
             I competed on the internal competition for the newcomers on the team.

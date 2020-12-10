@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import TrustTheBoaResumedExp from '../../../modules/resumed-exp/maiden-vs-watcher-resumed-exp';
+import TrustTheBoaResumedExp from '../../../modules/resumed-exp/trust-the-boa-resumed-exp';
 import MaidenVsWatcherResumedExp from '../../../modules/resumed-exp/maiden-vs-watcher-resumed-exp';
 
 export default class CodeRace extends Component {

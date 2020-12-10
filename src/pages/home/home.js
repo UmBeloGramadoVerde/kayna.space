@@ -28,7 +28,7 @@ export default class Home extends Component {
             Informatics student in Universidade da Beira Interior.
         </h4>
           <h4 className="expansive_bois">
-            Angular, React, Node, Python, Java, .Net.
+            Angular, React, Node, Python, Unity, Arduino.
           <br />
             I can solve problems very well and learn things very quickly.
         </h4>

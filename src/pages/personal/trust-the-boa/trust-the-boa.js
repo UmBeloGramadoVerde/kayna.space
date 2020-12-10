@@ -16,7 +16,7 @@ export default class TrustTheBoa extends Component {
         <div className="stagger_container">
           <h4 className='expansive_bois'>
             This is a collaborative wallet brand. We find cool stories, get cool
-            artists that we would like to illustrate the wallets in however way
+            artists that we would like to illustrate in however way
             they want and print the illustrations in fabric, from which we make
             the wallets. <a href='https://trusttheboa.com/' target='_blank' rel="noopener noreferrer">Our store.</a>
         </h4>
@@ -30,7 +30,7 @@ export default class TrustTheBoa extends Component {
           </figure>
           <h4 className='expansive_bois'>
             It is legitimately fun to work on this with everybody and we also give
-            1 euro out of every wallet sold to <a href="https://www.facebook.com/associacaoinstinto" target="_blank" rel="noopener noreferrer">Instinto</a>, a animal shelter in Covilhã,
+            1 euro out of every wallet sold to <a href="https://www.facebook.com/associacaoinstinto" target="_blank" rel="noopener noreferrer">Instinto</a>, an animal shelter in Covilhã,
             Portugal. We have one collection out and the prints of the second one
             are drawn and approved.
         </h4>

@@ -51,7 +51,7 @@ export default class Cemab extends Component {
             this was the highest point of my week. I was able to, once a week,
             spend 3 hours with great kids, talking about stuff I was really
             excited about whoever I wanted, I could barely believe I was paid to
-            do that.
+            do it.
         </h4>
           <figure className="expansive_bois">
             <img src="/images/teacher/teacher-14.jpg" alt="Droid 8" />

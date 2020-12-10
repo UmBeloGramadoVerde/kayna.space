@@ -17,7 +17,7 @@ export default class MaidenVsWatcher extends Component {
           <h4 className="expansive_bois">
             The game is a VR installation for local multiplayer between a player in VR and a
             player in real life (IRL). The gameplay loop similar to Five Nights at Freddy's,
-            where the security guard is a player in VR and the animatronic characters are
+            where the security guard is the player in VR and the animatronic characters are
             the IRL player. The following video explains how the game works:
           </h4>
           <figure className='expansive_bois'>

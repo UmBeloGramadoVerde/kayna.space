@@ -11,8 +11,8 @@ export default class GramadinhoVerdaoResumedExp extends Component {
                 url="/personal/gramadinho-verdao"
                 title="Gramadinho"
                 title2="Verdao"
-                description="Educational twitch streams"
-                technologies="Arduino - p5.js"
+                description="Educational Twitch streams"
+                technologies="Arduino - p5.js - Unity"
                 timespan="Jun '20 - Present" />
         );
     }
