@@ -44,13 +44,14 @@ export default class RepulsionHandler extends Component {
       /* This is a dumb implementation, there is probably a smart way of getting the size */
       if ((diff !== 56) && (diff !== 75) && (diff !== 76)) {
         this.bg.current.resize(innerWidth, innerHeight);
-        this.bigCanvasHeight = 0;
       }
       /* If we are dealing with a url bar size change ... */
       else if (innerHeight > this.bigCanvasHeight) {
         /* document.querySelectorAll('.Background')[0].style.height = `calc(100vh + ${diff}px)`; */
         this.bg.current.resize(innerWidth, innerHeight);
         this.bigCanvasHeight = innerHeight;
+      } else if (innerHeight = this.bigCanvasHeight) {
+        this.bg.current.resize(innerWidth, innerHeight);
       }
     });
 

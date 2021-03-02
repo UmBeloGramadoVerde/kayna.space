@@ -21,7 +21,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="content show_me_the_balls">
-        <h1 className="expansive_bois">Kaynã Rodrigues</h1>
+        <h1 className="expansive_bois name_title">Kaynã Rodrigues</h1>
         <div className="stagger_container">
           <h4 className="expansive_bois">
             Web dev at <Link to="/professional/altran">Altran</Link>,
