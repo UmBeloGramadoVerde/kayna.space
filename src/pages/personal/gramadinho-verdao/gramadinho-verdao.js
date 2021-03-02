@@ -35,6 +35,11 @@ export default class GramadinhoVerdao extends Component {
             The teaching sessions aim to get me back on planning and executing a class
             plan. The class subjects until now include Javascript, Arduino and Unity.
         </h4>
+          <h4 className="expansive_bois">
+            To see how fast and for how long I could program, I also did a
+            Any% Angular UI speedrun stream. The VOD is just the record of my suffering.
+        </h4>
+          <iframe width="560" height="315" className="expansive_bois yt-video" src="https://www.youtube.com/embed/zRqmKjPMx2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div className="other_exps">
