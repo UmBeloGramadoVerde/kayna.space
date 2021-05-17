@@ -15,7 +15,8 @@ import Home from '../../pages/home/home';
 
 import Configr from '../../pages/professional/configr/configr';
 import Droid from '../../pages/professional/droid/droid';
-import Altran from '../../pages/professional/altran/antran';
+import Capgemini from '../../pages/professional/capgemini/capgemini';
+import Talmix from '../../pages/professional/talmix/talmix';
 import Cemab from '../../pages/professional/cemab/cemab';
 import Sinatep from '../../pages/professional/sinatep/sinatep';
 
@@ -58,14 +59,17 @@ class Navigation extends Component {
           <Route path="/professional/droid">
             <Droid />
           </Route>
-          <Route path="/professional/altran">
-            <Altran />
+          <Route path="/professional/capgemini">
+            <Capgemini />
           </Route>
           <Route path="/professional/cemab">
             <Cemab />
           </Route>
           <Route path="/professional/sinatep">
             <Sinatep />
+          </Route>
+          <Route path="/professional/talmix">
+            <Talmix />
           </Route>
 
           {/* PERSONAL */}

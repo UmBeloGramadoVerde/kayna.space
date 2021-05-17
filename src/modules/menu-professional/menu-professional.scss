@@ -160,13 +160,13 @@ a {
   right: 2 * $size / ($disc-number / 4);
   bottom: 2 * $size / ($disc-number / 4);
   background: $palette_color_5;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.0s;
+  transition-delay: 0.0s;
 }
 
 .open-professional .l3-professional {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.0s;
+  transition-delay: 0.0s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -175,8 +175,8 @@ a {
 .open-professional .l3-professional:hover {
   background: $dark;
   color: $dark_color;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.0s;
+  transition-delay: 0.0s;
 }
 
 .open-professional .l3-professional:active {
@@ -197,13 +197,13 @@ a {
   right: 3 * $size / ($disc-number / 4);
   bottom: 3 * $size / ($disc-number / 4);
   background: $palette_color_4;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .open-professional .l4-professional {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -212,8 +212,8 @@ a {
 .open-professional .l4-professional:hover {
   background: $dark;
   color: $dark_color;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .open-professional .l4-professional:active {
@@ -234,13 +234,13 @@ a {
   right: 4 * $size / ($disc-number / 4);
   bottom: 4 * $size / ($disc-number / 4);
   background: $palette_color_3;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .open-professional .l5-professional {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -249,8 +249,8 @@ a {
 .open-professional .l5-professional:hover {
   background: $dark;
   color: $dark_color;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .open-professional .l5-professional:active {
@@ -271,13 +271,13 @@ a {
   right: 5 * $size / ($disc-number / 4);
   bottom: 5 * $size / ($disc-number / 4);
   background: $palette_color_2;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .open-professional .l6-professional {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -286,8 +286,8 @@ a {
 .open-professional .l6-professional:hover {
   background: $dark;
   color: $dark_color;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .open-professional .l6-professional:active {
@@ -308,13 +308,13 @@ a {
   right: 6 * $size / ($disc-number / 4);
   bottom: 6 * $size / ($disc-number / 4);
   background: $palette_color_1;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .open-professional .l7-professional {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -323,8 +323,8 @@ a {
 .open-professional .l7-professional:hover {
   background: $dark;
   color: $dark_color;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .open-professional .l7-professional:active {
@@ -345,8 +345,8 @@ a {
   right: ($disc-number - 1) * $size / ($disc-number / 4);
   bottom: ($disc-number - 1) * $size / ($disc-number / 4);
   background: $highligth_color;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
   font-size: 35px;
   svg {
     position: relative;
@@ -357,8 +357,8 @@ a {
 }
 
 .open-professional .last-professional {
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
@@ -367,8 +367,8 @@ a {
 .open-professional .last-professional:hover {
   background: $dark;
   color: $highligth_color;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
   svg {
     fill: $highligth_color;
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../shared/styles.scss';
-import AltranResumedExp from '../../../modules/resumed-exp/altran-resumed-exp';
+import CapgeminiResumedExp from '../../../modules/resumed-exp/capgemini-resumed-exp';
 import CemabResumedExp from '../../../modules/resumed-exp/cemab-resumed-exp';
 
 export default class Configr extends Component {
@@ -51,7 +51,7 @@ export default class Configr extends Component {
             </div>
           <div className="other_exps_items">
             <CemabResumedExp />
-            <AltranResumedExp />
+            <CapgeminiResumedExp />
           </div>
         </div>
 

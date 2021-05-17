@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import AltranResumedExp from '../../modules/resumed-exp/altran-resumed-exp';
+import TalmixResumedExp from '../../modules/resumed-exp/talmix-resumed-exp';
+import CapgeminiResumedExp from '../../modules/resumed-exp/capgemini-resumed-exp';
 import ArquivoWorldResumedExp from '../../modules/resumed-exp/arquivo-world-resumed-exp';
 import GramadinhoVerdaoResumedExp from '../../modules/resumed-exp/gramadinho-verdao-resumed-exp';
 import MaidenVsWatcherResumedExp from '../../modules/resumed-exp/maiden-vs-watcher-resumed-exp';
@@ -24,8 +25,8 @@ export default class Home extends Component {
         <h1 className="expansive_bois name_title">Kaynã Rodrigues</h1>
         <div className="stagger_container">
           <h4 className="expansive_bois">
-            Web dev at <Link to="/professional/altran">Altran</Link>,
-            Informatics student in Universidade da Beira Interior.
+            Web developer at <Link to="/professional/talmix">Talmix</Link>,
+            Informatics student in Universidade Aberta de Lisboa.
         </h4>
           <h4 className="expansive_bois">
             Angular, React, Node, Python, Unity, Arduino.
@@ -47,7 +48,8 @@ export default class Home extends Component {
 
 
         <div className="stagger_container">
-          <AltranResumedExp />
+          <TalmixResumedExp />
+          <CapgeminiResumedExp />
           <ConfigrResumedExp />
           <CemabResumedExp />
           <DroidResumedExp />

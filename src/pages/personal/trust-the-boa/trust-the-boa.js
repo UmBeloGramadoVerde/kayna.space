@@ -22,16 +22,16 @@ export default class TrustTheBoa extends Component {
         </h4>
           <figure className='expansive_bois'>
             <img src='/images/TTB/TTB-8.jpg' alt='TTB 8' />
-            <figcaption>"Cant't you hear?" - 1º Collection</figcaption>
+            <figcaption>"Can't you hear?" - 1º Collection</figcaption>
           </figure>
           <figure className='expansive_bois'>
             <img src='/images/TTB/TTB-9.jpg' alt='TTB 9' />
             <figcaption>"Woke up drenched" - 1º Collection</figcaption>
           </figure>
           <h4 className='expansive_bois'>
-            It is legitimately fun to work on this with everybody and we also give
+            It's legitimately fun to work on this with everybody. We give
             1 euro out of every wallet sold to <a href="https://www.facebook.com/associacaoinstinto" target="_blank" rel="noopener noreferrer">Instinto</a>, an animal shelter in Covilhã,
-            Portugal. We have one collection out and the prints of the second one
+            Portugal. One collection is out and the prints of the second one
             are drawn and approved.
         </h4>
           <figure className='expansive_bois'>

@@ -70,28 +70,34 @@ export default class MenuProfessional extends Component {
       <div className='menu-professional-container'>
         <nav className='menu-professional'>
           <Link
-            className='disc-professional l4-professional'
+            className='disc-professional l3-professional'
             to='/professional/droid'
           >
             <div><img src="/images/menu-text/droid-text.svg" alt="droid text" /></div>
           </Link>
           <Link
-            className='disc-professional l5-professional'
+            className='disc-professional l4-professional'
             to='/professional/cemab'
           >
             <div><img src="/images/menu-text/cemab-text.svg" alt="cemab text" /></div>
           </Link>
           <Link
-            className='disc-professional l6-professional'
+            className='disc-professional l5-professional'
             to='/professional/configr'
           >
             <div><img src="/images/menu-text/configr-text.svg" alt="configr text" /></div>
           </Link>
           <Link
-            className='disc-professional l7-professional'
-            to='/professional/altran'
+            className='disc-professional l6-professional'
+            to='/professional/capgemini'
           >
-            <div><img src="/images/menu-text/altran-text.svg" alt="altran text" /></div>
+            <div><img src="/images/menu-text/capgemini-text.svg" alt="capgemini text" /></div>
+          </Link>
+          <Link
+            className='disc-professional l7-professional'
+            to='/professional/talmix'
+          >
+            <div><img src="/images/menu-text/talmix-text.svg" alt="talmix text" /></div>
           </Link>
           <a className='disc-professional last-professional toggle-professional'>
             <span role="img" aria-label="Social clothes Emoji">👔</span>
