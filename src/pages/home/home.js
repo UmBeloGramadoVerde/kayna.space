@@ -31,7 +31,7 @@ export default class Home extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Inavitable Media
+              Inevitable Media
             </a>{" "}
             and{" "}
             <a
